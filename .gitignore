@@ -9,6 +9,7 @@ obj/
 *.user
 *.userprefs
 *.pidb
+*.suo
 
 # OS X only:
 .DS_Store
