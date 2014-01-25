@@ -27,7 +27,6 @@ var strings : String[] = ["","","",""];
 private var jumpto : int;
 private var s : Vector2 = Vector2.zero;
 
-private var score;
 private var aspectModified : String;
 	
 class DialogueEntry {
@@ -91,7 +90,6 @@ class Link {
 }
 
 function Awake () {
-	score = this.gameObject.GetComponent(Score);
 }
 
 function Start () {
@@ -193,6 +191,7 @@ function DoNextButton () {
 		ShowPassword();
 		}	
 	break;
+	/* We dont use this functionality in our game, so commenting it out so we can build for iPad. (It doesn't like 'eval'.)
 	case 3:
 		if (lineCount<parsedText.length-1) {
 		if (GUI.Button(Rect(Screen.width-84,Screen.height-84,64,64),"Next","arrow")) ProgressLineCount();
@@ -203,6 +202,7 @@ function DoNextButton () {
 		}
 		}
 	break;
+	*/
 	case 4:
 		if (lineCount<parsedText.length-1) {
 		if (GUI.Button(Rect(Screen.width-84,Screen.height-84,64,64),"Next","arrow")) ProgressLineCount();
@@ -328,9 +328,9 @@ function ShowList () {
 							
 				if ( c.is_plot_point.Equals(true)){
 				
-					score.good_endings[c.aspect] = c.good_ending;
+					Score.good_endings[c.aspect] = c.good_ending;
 					aspectModified = c.aspect;
-					Debug.Log(" Does the aspect with the name " + c.aspect + " have good ending?  " + score.good_endings[c.aspect]);
+					Debug.Log(" Does the aspect with the name " + c.aspect + " have good ending?  " + Score.good_endings[c.aspect]);
 				}
 				toLoad = c.next;
 		 } 	

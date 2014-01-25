@@ -1,4 +1,6 @@
 Build/
+iOSBuild/
+WebBuild/
 Library/
 Temp/
 
@@ -8,9 +10,10 @@ Temp/
 *.user
 *.userprefs
 *.pidb
+*.suo
+~$*.xlsx
 
 # OS X only:
 .DS_Store
 *.swp
 *.Trashes
-~$*.xlsx
