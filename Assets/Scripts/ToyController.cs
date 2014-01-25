@@ -74,16 +74,10 @@ public class ToyController : MonoBehaviour
 
     void Update()
     {
-
         if (fade_in)
-        {
             FadeIn();
-        }
-
-        if (fade_out)
-        {
+        else if (fade_out)
             FadeOut();
-        }
     }
 
     void FadeIn()
@@ -105,7 +99,6 @@ public class ToyController : MonoBehaviour
 
     void FadeOut()
     {
-
         temp_color = focusedToy.GetComponent<SpriteRenderer>().color;
         temp_color.a = Mathf.Lerp(temp_color.a, 0, Time.deltaTime * fadespeed);
 
@@ -116,7 +109,6 @@ public class ToyController : MonoBehaviour
             temp_color.a = 1;
             focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
             fade_out = false;
-
         }
     }
 }

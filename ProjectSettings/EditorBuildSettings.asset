@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/my_Scene.unity
   - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+  - enabled: 1
     path: Assets/Scenes/ToyScene.unity
