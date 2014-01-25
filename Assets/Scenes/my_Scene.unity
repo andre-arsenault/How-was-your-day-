@@ -434,6 +434,18 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
+    - shortText: Fine
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: It was bananas
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
     choiceMode: 0
     links: []
     next: 1
@@ -456,7 +468,19 @@ MonoBehaviour:
     longText: What did you do today, Monkey?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I played a lot. I talked a lot, and made new friends at school
+    - shortText: I went to monkey school and played with the other monkeys.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hung around with the other toys.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Went on a wild adventure
       next: 2
       editor: 0
       is_plot_point: 0
@@ -490,7 +514,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I hurt it a bit while playing with Teddy and Doll
+    - shortText: My game with Bunny and the Train got a little out of hand
       next: 10
       editor: 0
       is_plot_point: 0
@@ -525,7 +549,7 @@ MonoBehaviour:
       happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's nothing. I'm okay. It doesn't hurt. I can take it
+    - shortText: It's nothing. It doesn't hurt. I can take it, I'm a tough monkey.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -578,6 +602,12 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
+    - shortText: There isn't much to tell. Don't worry about it
+      next: 5
+      editor: 0
+      is_plot_point: 1
+      aspect: Domestic
+      good_ending: 0
     choiceMode: 0
     links: []
     next: 1
@@ -597,11 +627,11 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 5
-    longText: I think there's something more to this, Monkey. Why don't you tell me?
+    longText: I think there's more to it, Monkey. What are you hiding?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "There is nothing to talk about. Nothing happened. Let me talk to
-        you about my game with Teddy instead\r\n"
+    - shortText: Nothing happened, but I want to tell you about the game I played
+        with Teddy.
       next: 6
       editor: 0
       is_plot_point: 0
@@ -629,12 +659,25 @@ MonoBehaviour:
     longText: Okay Mister Monkey, tell me about your game with Teddy.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "Well we played, and we had a lot of fun and then he got angry and
-        I made him angry and my arm\u2026\r\n"
+    - shortText: We were having a lot of fun, but then... I made him angry...
       next: 7
       editor: 0
       is_plot_point: 0
       aspect: 
+      good_ending: 0
+    - shortText: Well, Teddy made us a bunch of cookies. We ha a cookie-eating competition
+        and I won.
+      next: 19
+      editor: 0
+      is_plot_point: 1
+      aspect: Domestic
+      good_ending: 0
+    - shortText: OK! Bunny and Teddy traveled around the world in the happy choo-choo
+        train. Where life was always perfect and nothing bad ever happened.
+      next: 19
+      editor: 0
+      is_plot_point: 1
+      aspect: Domestic
       good_ending: 0
     choiceMode: 0
     links: []
@@ -655,7 +698,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 7
-    longText: Who was angry? What about your arm Mister Monkey? I'll help you
+    longText: Oh no! And then he hurt you? Poor Monkey! Let me help you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "I don't want your help. My arm is fine, there's nothing to worry
@@ -665,7 +708,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "Teacher will help us. And together we'll solve it.\r\n"
+    - shortText: Thank you. I already told teacher. She said, "Little monkeys shouldn't
+        be hurt," and promised to help me.
       next: 19
       editor: 0
       is_plot_point: 1
