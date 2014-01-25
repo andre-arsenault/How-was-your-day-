@@ -4,6 +4,9 @@ using UnityEngine;
 public class ToyController : MonoBehaviour
 {
     public Sprite temp;
+	public String aspect;
+	public int score;
+
     Sprite[] backgrounds;
     public Sprite[] Backgrounds
     {
@@ -14,6 +17,7 @@ public class ToyController : MonoBehaviour
     DialogueInstance dialogue;
     BackgroundController backgroundController;
     GameObject focusedToy;
+	BackGroundSwitch bg_switch;
 
 
 
@@ -22,11 +26,13 @@ public class ToyController : MonoBehaviour
         backgrounds = Resources.LoadAll<Sprite>("Sprites/" + gameObject.name);
         backgroundController = GameObject.Find("ToysBackground").GetComponent<BackgroundController>();
 
+	
         focusedToy = GameObject.Find("ToyFocused");
 
 		// Inform the backgroundSwitch script on which toy is the focused one.
 
-		GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().focused_toy = focusedToy;
+		bg_switch = GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>();
+		bg_switch.focused_toy =  focusedToy;
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
 
@@ -52,21 +58,31 @@ public class ToyController : MonoBehaviour
 		focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
 
 		//Inform the Backgroundswitch that we are entering dialogue "mode"
-		GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().enter_dialogue = true;
+		bg_switch.exit_dialogue = false;
+		bg_switch.enter_dialogue = true;
 
     }
 
     public void OnDialogueEnd(string aspect)
     {
+		this.aspect = aspect;
         // Set no focused toy
         focusedToy.GetComponent<SpriteRenderer>().sprite = null;
 
-        // Use the provided aspect on the HashTable (as its Key) to retrieve the result, and use that to load the relative background sprite
-        int aspectEnding = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
-        backgroundController.SetBackground(Resources.LoadAll<Sprite>("Sprites/Aspects/" + aspect)[aspectEnding]);
+        // 0 Neg 1 Pos
+		// Use the provided aspect on the HashTable (as its Key) to retrieve the result, and use that to load the relative background sprite
+		score = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
+		backgroundController.SetBackground(Resources.LoadAll<Sprite>("Sprites/Aspects/" + aspect)[score]);
         //focusedToy.GetComponent<SpriteRenderer>().sprite = temp;
 
-        Camera.main.GetComponent<CameraController>().ZoomOutFromScene();
+		//Notify the Background switch
+
+		bg_switch.score = score;
+		bg_switch.aspect = aspect;
+		bg_switch.enter_dialogue = false;
+		bg_switch.exit_dialogue = true;
+
+        
 
     }
 
