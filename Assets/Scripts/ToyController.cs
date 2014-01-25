@@ -8,7 +8,7 @@ public class ToyController : MonoBehaviour
 	Color temp_color;
 	bool fade_in = false;
 	bool fade_out = false;
-	float fadespeed = 1.1f;
+	float fadespeed = 5f;
 	public Sprite[] Backgrounds
     {
         get { return backgrounds; }
