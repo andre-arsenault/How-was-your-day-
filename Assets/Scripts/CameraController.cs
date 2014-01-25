@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         if (camera.orthographicSize < originalSize)
-            camera.orthographicSize += (0.5f * Time.deltaTime);
+            camera.orthographicSize += (0.3f * Time.deltaTime);
         else if (camera.orthographicSize > originalSize)
             camera.orthographicSize = originalSize;
     }
