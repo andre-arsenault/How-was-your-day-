@@ -1,6 +1,7 @@
 Build/
 Library/
 Temp/
+obj/
 
 *.csproj
 *.unityproj
@@ -8,6 +9,7 @@ Temp/
 *.user
 *.userprefs
 *.pidb
+*.suo
 
 # OS X only:
 .DS_Store
