@@ -1026,6 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e0bfcb76646304f9f8c828db1924ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  temp: {fileID: 0}
 --- !u!114 &564028713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,3 +1301,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f4d919c9ac5e746a70a92bb8c4a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoomOutSpeed: .300000012
