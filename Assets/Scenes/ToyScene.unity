@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: 42a2f64b19f8d3c4ca3b4b7e435efd58, type: 3}
-  cursorMode: 0
+  cursorMode: 1
   cursorHotSpot: {x: 0, y: 0}
   scaleIncrease: .0599999987
   scaleSpeed: 6
