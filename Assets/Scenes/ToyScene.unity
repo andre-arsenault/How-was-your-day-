@@ -86,8 +86,8 @@ GameObject:
   - 61: {fileID: 564028709}
   - 114: {fileID: 564028708}
   - 114: {fileID: 564028712}
-  - 114: {fileID: 564028707}
   - 114: {fileID: 564028713}
+  - 114: {fileID: 564028707}
   m_Layer: 0
   m_Name: MonkeyToy
   m_TagString: Untagged
@@ -278,13 +278,13 @@ MonoBehaviour:
     choices:
     - shortText: "I don't want to talk about it! Teddy asked about it and got what
         he deserved. Stop asking.\r\n"
-      next: 19
+      next: 20
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
     - shortText: I don't want to talk about it. Leave me alone
-      next: 19
+      next: 21
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -390,14 +390,14 @@ MonoBehaviour:
     choices:
     - shortText: "I don't want your help. My arm is fine, there's nothing to worry
         about.\r\n"
-      next: 19
+      next: 21
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
     - shortText: Thank you. I already told teacher. She said, "Little monkeys shouldn't
         be hurt," and promised to help me.
-      next: 19
+      next: 22
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -425,7 +425,7 @@ MonoBehaviour:
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "I deserve it. I'm a bad monkey.\r\n"
-      next: 19
+      next: 23
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -461,14 +461,14 @@ MonoBehaviour:
     choices:
     - shortText: "Nobody can help me. Anyway I'm used to it now. There's no need to
         make a fuss.\r\n"
-      next: 19
+      next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
     - shortText: Thank you. I already told teacher. She said, "Little monkeys shouldn't
         be hurt," and promised to help me.
-      next: 19
+      next: 22
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -573,14 +573,14 @@ MonoBehaviour:
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "Nobody saw anything. There's nothing to do.\r\n"
-      next: 19
+      next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
     - shortText: Someone saw the accident happen and they told teacher. I think it
         will be better now...
-      next: 19
+      next: 22
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -609,7 +609,7 @@ MonoBehaviour:
     choices:
     - shortText: I'm just a bad monkey. I know I have to be. I deserve everything
         I get.
-      next: 19
+      next: 23
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -645,14 +645,14 @@ MonoBehaviour:
     choices:
     - shortText: "I did something bad. I deserved it. He told me that many many times.
         So I should be better. Maybe next time I won't deserve it.\r\n"
-      next: 19
+      next: 23
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
     - shortText: I don't know what I did. But I must have done something to deserve
         it. He loves me and wouldn't hurt me unless he had a good reason to.
-      next: 19
+      next: 23
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -722,13 +722,13 @@ MonoBehaviour:
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: It's my fault.. Teacher shouldn't need to know.
-      next: 19
+      next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
     - shortText: Teacher wouldn't believe me anyway. She doesn't want to help me.
-      next: 19
+      next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -757,14 +757,14 @@ MonoBehaviour:
     choices:
     - shortText: "I don't want Teacher to know. He takes care of me and I don't want
         to make him look like a bad person.\r\n"
-      next: 19
+      next: 22
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
     - shortText: Teacher would only make things worse. If teacher knows it will just
         make him angry. He hurts me when he's angry.
-      next: 19
+      next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -792,7 +792,7 @@ MonoBehaviour:
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: She said, "Little monkeys shouldn't be hurt," and helped me.
-      next: 19
+      next: 22
       editor: 0
       is_plot_point: 1
       aspect: Domestic
@@ -815,8 +815,118 @@ MonoBehaviour:
     mode: 1
     narration: []
     script: 
-  - name: TERMINATION
+  - name: 19 TERMINATION
     longText: You put Monkey down and go to bed
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices: []
+    choiceMode: 0
+    links: []
+    next: 1
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 1
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 20 TERMINATION_BULLY
+    longText: Bad Monkey! If you keep it up, you won't have any friends. Goodnight!
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices: []
+    choiceMode: 0
+    links: []
+    next: 1
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 1
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 21 TERMINATION_CLOSED_OFF
+    longText: Fine! I'm going to bed.
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices: []
+    choiceMode: 0
+    links: []
+    next: 1
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 1
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 22 TERMINATION_POSITIVE
+    longText: Things always work out well in the end, monkey. Let's go to bed.
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices: []
+    choiceMode: 0
+    links: []
+    next: 1
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 1
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 23 TERMINATION_DEJECTED
+    longText: I don't play with bad monkeys. I shan't play with you anymore.
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices: []
+    choiceMode: 0
+    links: []
+    next: 1
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 1
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 24 TERMINATION_GIVEUP
+    longText: I suppose you're right, monkey. Goodnight.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices: []
     choiceMode: 0
