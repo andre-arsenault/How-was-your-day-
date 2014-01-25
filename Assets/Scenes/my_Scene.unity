@@ -434,6 +434,18 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
+    - shortText: Fine
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: It was bananas
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
     choiceMode: 0
     links: []
     next: 1
@@ -456,7 +468,19 @@ MonoBehaviour:
     longText: What did you do today, Monkey?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I played a lot. I talked a lot, and made new friends at school
+    - shortText: I went to monkey school and played with the other monkeys.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hung around with the other toys.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Went on a wild adventure
       next: 2
       editor: 0
       is_plot_point: 0
@@ -490,7 +514,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I hurt it a bit while playing with Teddy and Doll
+    - shortText: My game with Teddy and the Train got a little out of hand.
       next: 10
       editor: 0
       is_plot_point: 0
@@ -525,7 +549,7 @@ MonoBehaviour:
       happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's nothing. I'm okay. It doesn't hurt. I can take it
+    - shortText: It's nothing. It doesn't hurt. I can take it, I'm a tough monkey.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -578,6 +602,12 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
+    - shortText: There isn't much to tell. Don't worry about it
+      next: 5
+      editor: 0
+      is_plot_point: 1
+      aspect: Domestic
+      good_ending: 0
     choiceMode: 0
     links: []
     next: 1
@@ -597,11 +627,11 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 5
-    longText: I think there's something more to this, Monkey. Why don't you tell me?
+    longText: I think there's more to it, Monkey. What are you hiding?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "There is nothing to talk about. Nothing happened. Let me talk to
-        you about my game with Teddy instead\r\n"
+    - shortText: Nothing happened, but I want to tell you about the game I played
+        with Teddy.
       next: 6
       editor: 0
       is_plot_point: 0
@@ -629,12 +659,25 @@ MonoBehaviour:
     longText: Okay Mister Monkey, tell me about your game with Teddy.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "Well we played, and we had a lot of fun and then he got angry and
-        I made him angry and my arm\u2026\r\n"
+    - shortText: We were having a lot of fun, but then... I made him angry...
       next: 7
       editor: 0
       is_plot_point: 0
       aspect: 
+      good_ending: 0
+    - shortText: Well, Teddy made us a bunch of cookies. We ha a cookie-eating competition
+        and I won.
+      next: 19
+      editor: 0
+      is_plot_point: 1
+      aspect: Domestic
+      good_ending: 0
+    - shortText: OK! Bunny and Teddy traveled around the world in the happy choo-choo
+        train. Where life was always perfect and nothing bad ever happened.
+      next: 19
+      editor: 0
+      is_plot_point: 1
+      aspect: Domestic
       good_ending: 0
     choiceMode: 0
     links: []
@@ -655,7 +698,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 7
-    longText: Who was angry? What about your arm Mister Monkey? I'll help you
+    longText: Oh no! And then he hurt you? Poor Monkey! Let me help you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "I don't want your help. My arm is fine, there's nothing to worry
@@ -665,7 +708,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "Teacher will help us. And together we'll solve it.\r\n"
+    - shortText: Thank you. I already told teacher. She said, "Little monkeys shouldn't
+        be hurt," and promised to help me.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -693,14 +737,14 @@ MonoBehaviour:
     longText: What do you mean? Does this happen a lot, Mister Monkey?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I deserve it. I'm a bad person.\r\n"
+    - shortText: "I deserve it. I'm a bad monkey.\r\n"
       next: 19
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 1
-    - shortText: "Another Toy is always hitting me and he's the reason my arm looks
-        that way\r\n"
+    - shortText: Another toy is always angry at me. There's nothing I can do about
+        it. He hits me all the time.
       next: 9
       editor: 0
       is_plot_point: 0
@@ -735,7 +779,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "Teacher will help us. And together we'll solve it.\r\n"
+    - shortText: Thank you. I already told teacher. She said, "Little monkeys shouldn't
+        be hurt," and promised to help me.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -760,8 +805,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 10
-    longText: Oh Mister Monkey, you should be more careful next time. You could have
-      been hurt. What happened?
+    longText: Oh Mister Monkey! You should be more careful next time. What happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "It was an accident.\r\n"
@@ -792,22 +836,22 @@ MonoBehaviour:
     longText: An Accident? What happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "Oh nothing important. It was a mistake and it's never going to happen
-        again.\r\n\n"
+    - shortText: It's OK. It was a mistake and they promised it was never going to
+        happen again.
       next: 5
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: "Well I was chasing Teddy and and I slipped and I uh fell and that's
-        all that happened.\r\n"
+    - shortText: Well I was chasing Teddy and - and -  I slipped... and - I...  uh
+        -  fell. That's all! I'm a clumsy monkey sometimes!
       next: 5
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: "Well someone hurt me, but I think it was an accident and they didn't
-        really mean it\r\n"
+    - shortText: Well someone hurt me, but I think it was an accident. I'm sure they
+        didn't really mean to.
       next: 12
       editor: 0
       is_plot_point: 0
@@ -838,7 +882,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 12
-    longText: Someone hurt you on purpose? Then what happened? Poor Mister Monkey
+    longText: Someone hurt you on purpose? Poor Mister Monkey! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "Nobody saw anything. There's nothing to do.\r\n"
@@ -847,8 +891,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "Someone saw the accident happen and they told teacher. I think that
-        things are going to be better\r\n"
+    - shortText: Someone saw the accident happen and they told teacher. I think it
+        will be better now...
       next: 19
       editor: 0
       is_plot_point: 1
@@ -873,19 +917,17 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 13
-    longText: A bad Monkey? What naughty thing did you get up to today Mister Monkey?
-      Why do you call yourself that?
+    longText: A bad monkey? Why?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I'm just a bad person. I know I have to be. I deserved everything
-        I got.\r\n"
+    - shortText: I'm just a bad monkey. I know I have to be. I deserve everything
+        I get.
       next: 19
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "I was disobedient. I should have been better and obeyed instead
-        of being naughty.\r\n"
+    - shortText: I was disobedient. I shouldn't have been naughty and just obeyed.
       next: 14
       editor: 0
       is_plot_point: 0
@@ -910,7 +952,8 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 14
-    longText: Oh you were disobeying? Naughty little Monkey. What did you do ?
+    longText: Disobeying! Oh monkey, you know that makes him angry! What did you do
+      ?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "I did something bad. I deserved it. He told me that many many times.
@@ -920,8 +963,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "I don't know what I did. But I must have done something to deserve
-        it. He loves me and wouldn't do that unless he had a good reason to.\r\n"
+    - shortText: I don't know what I did. But I must have done something to deserve
+        it. He loves me and wouldn't hurt me unless he had a good reason to.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -949,20 +992,21 @@ MonoBehaviour:
     longText: Bad Domestic Ending Closure blah blah
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "It doesn't matter whether I tell teacher or not. Nothing is going
-        to ever change.\r\n"
+    - shortText: It doesn't matter whether I told teacher. It wouldn't matter anyway.
       next: 16
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: "No I did not tell teacher.\r\n"
+    - shortText: No.
       next: 17
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: "Yes I told teacher.\r\n"
+    - shortText: 'Yes.
+
+'
       next: 18
       editor: 0
       is_plot_point: 0
@@ -990,14 +1034,13 @@ MonoBehaviour:
     longText: Why not Mister Monkey? Why wouldn't it matter?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "It doesn't matter because I deserve it. Teacher shouldn't need to
-        know.\r\n"
+    - shortText: It's my fault.. Teacher shouldn't need to know.
       next: 19
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "Teacher wouldn't believe me anyway. She wouldn't want to help me.\r\n"
+    - shortText: Teacher wouldn't believe me anyway. She doesn't want to help me.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -1032,8 +1075,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: "Teacher would only make things worse. Then  after teacher talks
-        to him, he'll be angry and hurt me again.\r\n"
+    - shortText: Teacher would only make things worse. If teacher knows it will just
+        make him angry. He hurts me when he's angry.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -1058,10 +1101,10 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 18
-    longText: That's a good Monkey. What did Teacher do ?
+    longText: That's a good monkey. What did teacher do ?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "She did all she could to help me\r\n"
+    - shortText: She said, "Little monkeys shouldn't be hurt," and helped me.
       next: 19
       editor: 0
       is_plot_point: 1
