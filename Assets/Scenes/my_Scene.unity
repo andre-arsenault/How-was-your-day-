@@ -952,6 +952,991 @@ Transform:
   m_LocalScale: {x: 9.23770046, y: 5.05779028, z: .14367947}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1369149836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1369149839}
+  - 114: {fileID: 1369149838}
+  - 114: {fileID: 1369149837}
+  m_Layer: 0
+  m_Name: Wolf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1369149837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369149836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8951c31b0bf9974fb344936d4e242c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1369149838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369149836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb3e1fdfa547af4990024e3ef8b51de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSkin: {fileID: 11400000, guid: bcb23eae559494fb7b26ddfd27aa676e, type: 2}
+  startOn: 0
+  defaultImg: {fileID: 0}
+  defaultAudio: {fileID: 0}
+  dialogue:
+  - name: 0
+    longText: Hello Wolf! How was your day?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: It was OK I guess.
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Fine.
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: It was a howler.
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 1
+    longText: What did you do today, wolf?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I chased after my own tail for hours. Almost caught it this time.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I looked at the moon, and it was so beautiful I couldn't stop howling
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I was very hungry. Like well... a wolf.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I met a girl dressed in red who was walking through the forest. She
+        was delicious.
+      next: 13
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 2
+    longText: Are you alone? Where is the rest of your pack?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I don't have a pack. I roam alone.
+      next: 3
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I'll soon be with my pack again. We're off doing different tasks
+        at the moment.
+      next: 10
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 3
+    longText: Why is that, Wolf? Why don't you have a pack?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: 'The pack doesn''t like me. They do not want me running with them.
+
+'
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Meh, I don't really like the pack. I don't want to run with them.
+      next: 7
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I am a lone wolf and I like it that way.
+      next: 8
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 4
+    longText: But you're such a cute wolf. Why doesn't the pack like you?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I am too weak. I can't even get the scraps when other wolves are
+        around.
+      next: 5
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I haven't found the right fit and I like being a lone wolf.
+      next: 6
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: The other wolves think I'm mean. They are all jealous of my superior
+        skill. I'm just better than them, what can I do? It's not my fault they're
+        all stupid.
+      next: 16
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 5
+    longText: That's okay Wolf. As long as you keep trying, you will become better
+      and stronger!
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I will never give up. I will become strong and maybe even lead my
+        own pack in the future.
+      next: 17
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    - shortText: That's sound like a lot of work. It's too hard. I'll just die alone.
+      next: 18
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 6
+    longText: Why is that? Don't you get along with the other wolves?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No, I don't. And it's their fault. If they don't want me, they can
+        stay without me. Their loss!
+      next: 19
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    - shortText: I don't get along with these ones. But that's no reason to give up.
+        I'll keep looking for a pack where I will fit in.
+      next: 17
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    - shortText: I'm too different. I think I prefer to stay alone. After all, I like
+        it fine as it is.
+      next: 8
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 7
+    longText: Why don't you like the others, Wolfy?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: 'They are too below me. I don''t want to run with weaklings. They
+        know this and don''t like me either.
+
+'
+      next: 16
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    - shortText: 'I just never found a pack that I wanted to join. '
+      next: 6
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 8
+    longText: Why do you prefer to be alone Wolfy?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: 'The other wolves plan bad things against me behind my back. I don''t
+        want to stay with them
+
+'
+      next: 19
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    - shortText: I am stronger alone.
+      next: 9
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 9
+    longText: Don't you think you would be even stronger as a pack?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Maybe you're right. I will find a pack and we will all be stronger
+        together.
+      next: 17
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    - shortText: No, they will only hold me back. I will remain a lone wolf.
+      next: 20
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 10
+    longText: Oh? What are you doing then?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I am catching up with the rest. They've gotten a bit ahead of me.
+        They're just so much faster than me.
+      next: 11
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I'm scouting for prey, the rest of the pack are waiting for my signal.
+      next: 11
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I am relaxing. The rest of the pack is working. They'll be here in
+        a while.
+      next: 12
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 11
+    longText: Are you happy with this role in the pack?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No. I will be better alone. I don't need to follow the rest of them.
+      next: 20
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    - shortText: No. But I will become stronger. I will become faster. I will catch
+        the biggest prey and have the biggest lair.
+      next: 21
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    - shortText: Yes. I love it. My pack is the best. Hoooooowl!
+      next: 22
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 12
+    longText: Are you happy with this role in the pack?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Yes. I am well-respected.
+      next: 22
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    - shortText: Yes. I like leading and my pack is the best.
+      next: 22
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    - shortText: No. I'd like to have a bigger, stronger pack.  But really it's only
+        a matter of time with me as their glorious leader.
+      next: 21
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 1
+    - shortText: No. They are holding me back. I will be better alone.
+      next: 20
+      editor: 0
+      is_plot_point: 1
+      aspect: Lonely
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 13
+    longText: You ate a girl?!
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, I had to get rid of her grandmother's aftertaste.
+      next: 14
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Yeah, it was a pretty bad idea though, a lumberjack tried to cut
+        her out of my stomach. He obviously doesn't know how eating people works.
+      next: 14
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 14
+    longText: You are a scary wolf!
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I'm just kidding. I would never eat little girls.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Why... thank you
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: 'This cuteness is just a facade! I''m really a wild beast! '
+      next: 15
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 15
+    longText: '...'
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 16 TERM_MEAN_WOLF
+    longText: With that kind of behavior, it's no wonder that the others can't stand
+      you
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 17 TERM_I_CAN_DO_IT
+    longText: That's the Spirit! I'm sure you'll find a pack that will accept you
+      in no time!
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 18 TERM_GIVE_UP
+    longText: If you won't even help yourself wolf, then I shan't waste any more time
+      with you either.
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 19 TERM_STAY_WITHOUT_EACHOTHER
+    longText: They're going to stay without you, and you without them
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 20 TERM_HAPPIER_ALONE
+    longText: If you're happier alone, I guess that works for you.
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 21 TERM_GET_STRONGER
+    longText: That's what I want to hear. Work hard and become stronger
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 22 TERM_CONTENT
+    longText: I'm happy that you're happy
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: No actually, it's not a facade. I really am just this cute.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  bools: 01010000
+  ints: 00000000000000000000000000000000
+  strings:
+  - 
+  - 
+  - 
+  - 
+--- !u!4 &1369149839
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369149836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 2.05217719, z: -11.2115507}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1728387810
 GameObject:
   m_ObjectHideFlags: 0
