@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using System;
 public class ToyController : MonoBehaviour
 {
     Sprite[] backgrounds;
@@ -11,10 +11,16 @@ public class ToyController : MonoBehaviour
     }
 
     DialogueInstance dialogue;
+    BackgroundController backgroundController;
+    GameObject focusedToy;
 
     void Awake()
     {
         backgrounds = Resources.LoadAll<Sprite>("Sprites/" + gameObject.name);
+        backgroundController = GameObject.Find("ToysBackground").GetComponent<BackgroundController>();
+        backgroundController.SetBackground(0);
+
+        focusedToy = GameObject.Find("ToyFocused");
 
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
@@ -25,18 +31,23 @@ public class ToyController : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
 
         // Select the blurred toys background
-        GameObject.Find("ToysBackground").GetComponent<ToysBackgroundController>().SetBackground(0);
+        backgroundController.SetBackground(1);
 
         // Set the focused monkey as the focused toy
-        GameObject.Find("ToyFocused").GetComponent<SpriteRenderer>().sprite = backgrounds[0];
+        focusedToy.GetComponent<SpriteRenderer>().sprite = backgrounds[1];
 
         // Start the dialogue
         dialogue.startOn = 0;
         dialogue.enabled = true;
     }
 
-	void OnDialogueEnd(string aspect)
-	{
-		Debug.Log(string.Format("OnDialogueEnd({0}]) called!", aspect));
-	}
+    public void OnDialogueEnd(string aspect)
+    {
+        // Set no focused toy
+        focusedToy.GetComponent<SpriteRenderer>().sprite = null;
+
+        // Use the provided aspect on the HashTable (as its Key) to retrieve the result, and use that to load the relative background sprite
+        int aspectEnding = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
+        backgroundController.SetBackground(Resources.LoadAll<Sprite>("Sprites/Aspects/" + aspect)[aspectEnding]);
+    }
 }
