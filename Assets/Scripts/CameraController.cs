@@ -4,7 +4,7 @@ public class CameraController : MonoBehaviour
 {
     public float zoomOutSpeed = 0.3f;
 
-    float originalSize;
+    public float originalSize;
 
     void Awake()
     {
@@ -13,8 +13,12 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        if (camera.orthographicSize < originalSize)
-            camera.orthographicSize += (zoomOutSpeed * Time.deltaTime);
+
+        if (camera.orthographicSize < 3.45){
+			camera.orthographicSize += (zoomOutSpeed * Time.deltaTime);
+			Debug.Log("mpika");
+		}
+           
         else if (camera.orthographicSize > originalSize)
             camera.orthographicSize = originalSize;
     }
