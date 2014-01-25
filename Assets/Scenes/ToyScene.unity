@@ -87,6 +87,7 @@ GameObject:
   - 114: {fileID: 564028708}
   - 114: {fileID: 564028707}
   - 114: {fileID: 564028712}
+  - 114: {fileID: 564028713}
   m_Layer: 0
   m_Name: MonkeyToy
   m_TagString: Untagged
@@ -872,6 +873,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e0bfcb76646304f9f8c828db1924ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &564028713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 564028706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8951c31b0bf9974fb344936d4e242c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &669991043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1052,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826729822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f4ff4885fab1c40889148f5980bb2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 43d70a5be1374764dbadf0725c9bc1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1896307166

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class ToyController : MonoBehaviour
 {
@@ -11,10 +12,16 @@ public class ToyController : MonoBehaviour
     }
 
     DialogueInstance dialogue;
+    BackgroundController backgroundController;
+    GameObject focusedToy;
 
     void Awake()
     {
         backgrounds = Resources.LoadAll<Sprite>("Sprites/" + gameObject.name);
+        backgroundController = GameObject.Find("ToysBackground").GetComponent<BackgroundController>();
+        backgroundController.SetBackground(2);
+
+        focusedToy = GameObject.Find("ToyFocused");
 
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
@@ -25,13 +32,24 @@ public class ToyController : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
 
         // Select the blurred toys background
-        GameObject.Find("ToysBackground").GetComponent<ToysBackgroundController>().SetBackground(0);
+        backgroundController.SetBackground(1);
 
         // Set the focused monkey as the focused toy
-        GameObject.Find("ToyFocused").GetComponent<SpriteRenderer>().sprite = backgrounds[0];
+        focusedToy.GetComponent<SpriteRenderer>().sprite = backgrounds[1];
 
         // Start the dialogue
         dialogue.startOn = 0;
         dialogue.enabled = true;
+
+        StartCoroutine(DialogueEnded());
+    }
+
+    IEnumerator DialogueEnded()
+    {
+        yield return new WaitForSeconds(3);
+
+        // Select the bed scene background
+        backgroundController.SetBackground(0);
+        focusedToy.GetComponent<SpriteRenderer>().sprite = null;
     }
 }

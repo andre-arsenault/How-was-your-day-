@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ToysBackgroundController : MonoBehaviour
+public class BackgroundController : MonoBehaviour
 {
     #region Fields & Constructors
 
@@ -12,7 +12,7 @@ public class ToysBackgroundController : MonoBehaviour
         set { backgrounds = value; }
     }
 
-    public ToysBackgroundController()
+    public BackgroundController()
     {
         backgrounds = new Sprite[1];
     }
