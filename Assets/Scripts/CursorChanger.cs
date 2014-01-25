@@ -43,7 +43,12 @@ public class CursorChanger : MonoBehaviour
 
     void OnMouseExit()
     {
-        Cursor.SetCursor(null, cursorHotSpot, cursorMode);
+        ResetMouse();
         isActive = false;
+    }
+
+    public void ResetMouse()
+    {
+        Cursor.SetCursor(null, cursorHotSpot, cursorMode);
     }
 }

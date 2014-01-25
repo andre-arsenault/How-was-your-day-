@@ -36,6 +36,8 @@ public class ToyController : MonoBehaviour
 
         // Hide the selection monkey toy
         GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<CursorChanger>().ResetMouse();
+        GetComponent<CursorChanger>().enabled = false;
 
         // Select the blurred toys background
         backgroundController.SetBackground(1);
