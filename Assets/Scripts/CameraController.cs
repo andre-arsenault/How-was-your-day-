@@ -16,7 +16,6 @@ public class CameraController : MonoBehaviour
 
         if (camera.orthographicSize < 3.45){
 			camera.orthographicSize += (zoomOutSpeed * Time.deltaTime);
-			Debug.Log("mpika");
 		}
            
         else if (camera.orthographicSize > originalSize)

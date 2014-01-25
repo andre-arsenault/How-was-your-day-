@@ -61,6 +61,7 @@ public class ToyController : MonoBehaviour
 		bg_switch.exit_dialogue = false;
 		bg_switch.enter_dialogue = true;
 
+
     }
 
     public void OnDialogueEnd(string aspect)
@@ -72,8 +73,7 @@ public class ToyController : MonoBehaviour
         // 0 Neg 1 Pos
 		// Use the provided aspect on the HashTable (as its Key) to retrieve the result, and use that to load the relative background sprite
 		score = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
-		backgroundController.SetBackground(Resources.LoadAll<Sprite>("Sprites/Aspects/" + aspect)[score]);
-        //focusedToy.GetComponent<SpriteRenderer>().sprite = temp;
+
 
 		//Notify the Background switch
 
