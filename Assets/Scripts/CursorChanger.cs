@@ -5,6 +5,8 @@ public class CursorChanger : MonoBehaviour
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 cursorHotSpot = Vector2.zero;
+    public float scaleIncrease = 0.5f;
+    public float scaleSpeed = 1f;
 
     /// <summary>
     /// This boolean value will represent whether the mouse is hovering over the
@@ -12,33 +14,25 @@ public class CursorChanger : MonoBehaviour
     /// </summary>
     bool isActive;
 
-    DialogueInstance dialogue;
+    Vector3 originalSize;
 
     void Awake()
     {
         Screen.showCursor = true;
         isActive = false;
 
-        dialogue = gameObject.GetComponent<DialogueInstance>();
-        //Debug.Log(dialogue.GetType().ToString());
+        originalSize = transform.localScale;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && isActive)
+        if (isActive)
         {
-            /* startOn is the node we want to initiate the dialogue it will be different for every object
-             * It's propably to best to have different DialogueInstance.js for different toys instead of having one
-             * huge dialogue Tree
-             * 
-             * if ( this.name.Equals("Test_toy"))
-             * dialogue.startOn = 0;
-             * 
-             * dialogue.enabled = true;
-             */
-
-            Debug.Log("I have been clicked on...");
+            if (transform.localScale.x < (originalSize.x + scaleIncrease))
+                transform.localScale = new Vector3(transform.localScale.x + (scaleIncrease * Time.deltaTime * scaleSpeed), transform.localScale.y + (scaleIncrease * Time.deltaTime * scaleSpeed), transform.localScale.z);
         }
+        else if (originalSize.x < transform.localScale.x)
+            transform.localScale = new Vector3(transform.localScale.x - (scaleIncrease * Time.deltaTime * scaleSpeed), transform.localScale.y - (scaleIncrease * Time.deltaTime * scaleSpeed), transform.localScale.z);
     }
 
     void OnMouseEnter()
