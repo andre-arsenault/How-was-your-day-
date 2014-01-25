@@ -5,9 +5,11 @@ public class ToyController : MonoBehaviour
 {
     #region Fields, Properties and Constructor
 
+    bool rotate = false;
     BackgroundController backgroundController;
     BackGroundSwitch bg_switch;
     DialogueInstance dialogue;
+    float rotationAngle;
     GameObject focusedToy;
     System.Random rotationRandomizer;
     Sprite[] backgrounds;
@@ -15,6 +17,8 @@ public class ToyController : MonoBehaviour
     public Sprite temp;
     public String aspect;
     public int score;
+
+    public float maxRotationAngle = 0.03f;
 
     public Sprite[] Backgrounds
     {
@@ -36,6 +40,7 @@ public class ToyController : MonoBehaviour
     void Awake()
     {
         focusedToy = GameObject.Find("ToyFocused");
+        backgrounds = Resources.LoadAll<Sprite>("Sprites/" + gameObject.name);
 
         // Inform the backgroundSwitch script on which toy is the focused one.
         GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().focused_toy = focusedToy;
@@ -68,44 +73,29 @@ public class ToyController : MonoBehaviour
         bg_switch.enter_dialogue = true;
     }
 
-    float rotationAngle;
-    bool rotate = false;
-
-    public void OnDialogueChosen()
-    {
-        rotationAngle = -((float)rotationRandomizer.NextDouble() / 10f);
-        rotate = true;
-        Debug.Log("Rotation angle:" + rotationAngle);
-    }
-
     void Update()
     {
         if (rotate)
         {
-            if (rotationAngle > 0f && focusedToy.transform.rotation.z < rotationAngle)
-            {
+            focusedToy.transform.Rotate(new Vector3(0f, 0f, rotationAngle) * (Time.deltaTime * 1000f));
+
+            if (focusedToy.transform.rotation.z < rotationAngle)
                 rotate = false;
-                Debug.LogWarning("STOP");
-            }
-            else if (rotationAngle > 0f)
-                Debug.Log(focusedToy.transform.rotation.z < rotationAngle);
-            else if (rotationAngle == 0f)
-                Debug.Log("?");
-
-            focusedToy.transform.RotateAround(Vector3.zero, Vector3.back, 1f * Time.deltaTime);
-
-            //Debug.Log("Z ROT: " + focusedToy.transform.rotation.z + " ROT ANGLE: " + rotationAngle);
         }
+        else if (focusedToy.transform.rotation.z < 0f)
+            focusedToy.transform.Rotate(new Vector3(0f, 0f, -rotationAngle) * (Time.deltaTime * 1000f));
+        else if (focusedToy.transform.rotation.z > 0f)
+            focusedToy.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+    }
 
-        //    focusedToy.transform.rotation = new Quaternion(0f, 0f, focusedToy.transform.rotation.z + (rotationAngle * Time.deltaTime), 0f);
-        //    Debug.Log("In i go...");
-        //}
-        //else if (rotate)
-        //{
-        //    focusedToy.transform.rotation = new Quaternion(0f, 0f, 180f, 0f);
-        //    rotate = false;
-        //    Debug.Log("Off i go...");
-        //}
+
+
+    public void OnDialogueChosen()
+    {
+        rotationAngle = Mathf.Max(-((float)rotationRandomizer.NextDouble() / 10f), -maxRotationAngle);
+        rotate = true;
+
+        Debug.Log("Rotation Angle: " + rotationAngle);
     }
 
     public void OnDialogueEnd(string aspect)
