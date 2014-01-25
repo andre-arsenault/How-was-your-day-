@@ -43,7 +43,7 @@ public class ToyController : MonoBehaviour
         backgroundController.SetBackground(1);
 
         // Set the focused monkey as the focused toy
-        focusedToy.GetComponent<SpriteRenderer>().sprite = backgrounds[1];
+        focusedToy.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
 
         temp_color.a = 0;
         //focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
