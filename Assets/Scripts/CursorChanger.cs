@@ -37,8 +37,11 @@ public class CursorChanger : MonoBehaviour
 
     void OnMouseEnter()
     {
-        Cursor.SetCursor(cursorTexture, cursorHotSpot, cursorMode);
-        isActive = true;
+        if (this.enabled)
+        {
+            Cursor.SetCursor(cursorTexture, cursorHotSpot, cursorMode);
+            isActive = true;
+        }
     }
 
     void OnMouseExit()
