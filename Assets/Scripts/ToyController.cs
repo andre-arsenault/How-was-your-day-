@@ -3,43 +3,44 @@ using UnityEngine;
 
 public class ToyController : MonoBehaviour
 {
-    public Sprite temp;
-	public String aspect;
-	public int score;
+    #region Fields, Properties and Constructor
 
+    BackgroundController backgroundController;
+    BackGroundSwitch bg_switch;
+    DialogueInstance dialogue;
+    GameObject focusedToy;
+    System.Random rotationRandomizer;
     Sprite[] backgrounds;
+
+    public Sprite temp;
+    public String aspect;
+    public int score;
+
     public Sprite[] Backgrounds
     {
         get { return backgrounds; }
         set { backgrounds = value; }
     }
 
-    DialogueInstance dialogue;
-    BackgroundController backgroundController;
-    GameObject focusedToy;
-    System.Random rotationRandomizer;
-	BackGroundSwitch bg_switch;
+
 
     public ToyController()
     {
         rotationRandomizer = new System.Random();
     }
 
+    #endregion Fields, Properties and Constructor
+
 
 
     void Awake()
     {
-        backgrounds = Resources.LoadAll<Sprite>("Sprites/" + gameObject.name);
-        backgroundController = GameObject.Find("ToysBackground").GetComponent<BackgroundController>();
-
-	
         focusedToy = GameObject.Find("ToyFocused");
 
         // Inform the backgroundSwitch script on which toy is the focused one.
-
         GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().focused_toy = focusedToy;
-		bg_switch = GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>();
-		bg_switch.focused_toy =  focusedToy;
+        bg_switch = GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>();
+        bg_switch.focused_toy = focusedToy;
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
 
@@ -62,9 +63,9 @@ public class ToyController : MonoBehaviour
         temp_color.a = 0;
         focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
 
-	//Inform the Backgroundswitch that we are entering dialogue "mode"
-		bg_switch.exit_dialogue = false;
-		bg_switch.enter_dialogue = true;
+        //Inform the Backgroundswitch that we are entering dialogue "mode"
+        bg_switch.exit_dialogue = false;
+        bg_switch.enter_dialogue = true;
     }
 
     float rotationAngle;
@@ -109,24 +110,19 @@ public class ToyController : MonoBehaviour
 
     public void OnDialogueEnd(string aspect)
     {
-		this.aspect = aspect;
+        this.aspect = aspect;
         // Set no focused toy
         focusedToy.GetComponent<SpriteRenderer>().sprite = null;
 
         // 0 Neg 1 Pos
-		// Use the provided aspect on the HashTable (as its Key) to retrieve the result, and use that to load the relative background sprite
-		score = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
-		backgroundController.SetBackground(Resources.LoadAll<Sprite>("Sprites/Aspects/" + aspect)[score]);
+        score = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
         //focusedToy.GetComponent<SpriteRenderer>().sprite = temp;
 
-		//Notify the Background switch
+        //Notify the Background switch
 
-		bg_switch.score = score;
-		bg_switch.aspect = aspect;
-		bg_switch.enter_dialogue = false;
-		bg_switch.exit_dialogue = true;
-
-        
-
+        bg_switch.score = score;
+        bg_switch.aspect = aspect;
+        bg_switch.enter_dialogue = false;
+        bg_switch.exit_dialogue = true;
     }
 }
