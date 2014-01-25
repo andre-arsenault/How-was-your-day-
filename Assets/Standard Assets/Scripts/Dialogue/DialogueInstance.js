@@ -191,6 +191,7 @@ function DoNextButton () {
 		ShowPassword();
 		}	
 	break;
+	/* We dont use this functionality in our game, so commenting it out so we can build for iPad. (It doesn't like 'eval'.)
 	case 3:
 		if (lineCount<parsedText.length-1) {
 		if (GUI.Button(Rect(Screen.width-84,Screen.height-84,64,64),"Next","arrow")) ProgressLineCount();
@@ -201,6 +202,7 @@ function DoNextButton () {
 		}
 		}
 	break;
+	*/
 	case 4:
 		if (lineCount<parsedText.length-1) {
 		if (GUI.Button(Rect(Screen.width-84,Screen.height-84,64,64),"Next","arrow")) ProgressLineCount();
