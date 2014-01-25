@@ -43,10 +43,11 @@ public class ToyController : MonoBehaviour
 
     public void OnDialogueEnd(string aspect)
     {
+        // Set no focused toy
         focusedToy.GetComponent<SpriteRenderer>().sprite = null;
 
+        // Use the provided aspect on the HashTable (as its Key) to retrieve the result, and use that to load the relative background sprite
         int aspectEnding = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
-
-        backgroundController.SetBackground(Resources.Load<Sprite>("Aspects/" + aspect + "/" + aspectEnding + ".jpg"));
+        backgroundController.SetBackground(Resources.LoadAll<Sprite>("Sprites/Aspects/" + aspect)[aspectEnding]);
     }
 }
