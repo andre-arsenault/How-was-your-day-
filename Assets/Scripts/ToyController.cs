@@ -19,22 +19,19 @@ public class ToyController : MonoBehaviour
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
 
-    void Update()
+    void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            // Hide the selection monkey toy
-            GetComponent<SpriteRenderer>().enabled = false;
+        // Hide the selection monkey toy
+        GetComponent<SpriteRenderer>().enabled = false;
 
-            // Select the blurred toys background
-            GameObject.Find("ToysBackground").GetComponent<ToysBackgroundController>().SetBackground(0);
+        // Select the blurred toys background
+        GameObject.Find("ToysBackground").GetComponent<ToysBackgroundController>().SetBackground(0);
 
-            // Set the focused monkey as the focused toy
-            GameObject.Find("ToyFocused").GetComponent<SpriteRenderer>().sprite = backgrounds[0];
+        // Set the focused monkey as the focused toy
+        GameObject.Find("ToyFocused").GetComponent<SpriteRenderer>().sprite = backgrounds[0];
 
-            // Start the dialogue
-            dialogue.startOn = 0;
-            dialogue.enabled = true;
-        }
+        // Start the dialogue
+        dialogue.startOn = 0;
+        dialogue.enabled = true;
     }
 }
