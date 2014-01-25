@@ -32,7 +32,9 @@ public class BackgroundController : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = sprite;
     }
 
-    void Awake()
+
+
+    public void Awake()
     {
         backgrounds = Resources.LoadAll<Sprite>("Sprites/Backgrounds");
     }
