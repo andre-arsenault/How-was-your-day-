@@ -18,6 +18,7 @@ public class ToyController : MonoBehaviour
     public String aspect;
     public int score;
 
+    public AudioClip audio;
     public float maxRotationAngle = 0.03f;
 
     public Sprite[] Backgrounds
@@ -92,10 +93,11 @@ public class ToyController : MonoBehaviour
 
     public void OnDialogueChosen()
     {
+        if (audio != null)
+            focusedToy.GetComponent<AudioSource>().PlayOneShot(audio);
+
         rotationAngle = Mathf.Max(-((float)rotationRandomizer.NextDouble() / 10f), -maxRotationAngle);
         rotate = true;
-
-        Debug.Log("Rotation Angle: " + rotationAngle);
     }
 
     public void OnDialogueEnd(string aspect)
