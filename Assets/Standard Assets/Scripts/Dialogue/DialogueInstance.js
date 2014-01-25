@@ -27,7 +27,6 @@ var strings : String[] = ["","","",""];
 private var jumpto : int;
 private var s : Vector2 = Vector2.zero;
 
-private var score;
 private var aspectModified : String;
 	
 class DialogueEntry {
@@ -91,7 +90,6 @@ class Link {
 }
 
 function Awake () {
-	score = this.gameObject.GetComponent(Score);
 }
 
 function Start () {
@@ -328,9 +326,9 @@ function ShowList () {
 							
 				if ( c.is_plot_point.Equals(true)){
 				
-					score.good_endings[c.aspect] = c.good_ending;
+					Score.good_endings[c.aspect] = c.good_ending;
 					aspectModified = c.aspect;
-					Debug.Log(" Does the aspect with the name " + c.aspect + " have good ending?  " + score.good_endings[c.aspect]);
+					Debug.Log(" Does the aspect with the name " + c.aspect + " have good ending?  " + Score.good_endings[c.aspect]);
 				}
 				toLoad = c.next;
 		 } 	
