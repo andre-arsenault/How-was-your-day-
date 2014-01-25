@@ -1,0 +1,15 @@
+Build/
+Library/
+Temp/
+
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+
+# OS X only:
+.DS_Store
+*.swp
+*.Trashes
