@@ -5,11 +5,6 @@ public class ToyController : MonoBehaviour
 {
     public Sprite temp;
     Sprite[] backgrounds;
-    Color temp_color;
-    bool fade_in = false;
-    bool fade_out = false;
-    float fadespeed = 5f;
-
     public Sprite[] Backgrounds
     {
         get { return backgrounds; }
@@ -29,6 +24,9 @@ public class ToyController : MonoBehaviour
 
         focusedToy = GameObject.Find("ToyFocused");
 
+		// Inform the backgroundSwitch script on which toy is the focused one.
+
+		GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().focused_toy = focusedToy;
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
 
@@ -41,20 +39,20 @@ public class ToyController : MonoBehaviour
         GetComponent<CursorChanger>().ResetMouse();
         GetComponent<CursorChanger>().enabled = false;
 
-        // Select the blurred toys background
-        backgroundController.SetBackground(1);
-
         // Set the focused toy
         focusedToy.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
-
-        temp_color = focusedToy.GetComponent<SpriteRenderer>().color;
-        temp_color.a = 0;
-        focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
-        fade_in = true;
 
         // Start the dialogue
         dialogue.startOn = 0;
         dialogue.enabled = true;
+
+		//Make the current focused toy transparent
+		Color temp_color = focusedToy.GetComponent<SpriteRenderer>().color;
+		temp_color.a = 0;
+		focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
+
+		//Inform the Backgroundswitch that we are entering dialogue "mode"
+		GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().enter_dialogue = true;
 
     }
 
@@ -72,51 +70,6 @@ public class ToyController : MonoBehaviour
 
     }
 
-    void Update()
-    {
 
-        if (fade_in)
-        {
-            FadeIn();
-        }
 
-        if (fade_out)
-        {
-            FadeOut();
-        }
-    }
-
-    void FadeIn()
-    {
-
-        temp_color = focusedToy.GetComponent<SpriteRenderer>().color;
-        temp_color.a = Mathf.Lerp(temp_color.a, 1, Time.deltaTime * fadespeed);
-
-        focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
-
-        if (Mathf.Abs(temp_color.a - 1) < 0.05)
-        {
-            temp_color.a = 1;
-            focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
-            fade_in = false;
-
-        }
-    }
-
-    void FadeOut()
-    {
-
-        temp_color = focusedToy.GetComponent<SpriteRenderer>().color;
-        temp_color.a = Mathf.Lerp(temp_color.a, 0, Time.deltaTime * fadespeed);
-
-        focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
-
-        if (Mathf.Abs(temp_color.a - 1) < 0.05)
-        {
-            temp_color.a = 1;
-            focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
-            fade_out = false;
-
-        }
-    }
 }
