@@ -325,6 +325,9 @@ function ShowList () {
 		  */
 	
 		if (GUILayout.Button(c.shortText,GUILayout.Height(30))){
+		
+				// Since a choice has been made, send a signal to the toy to do someone (wiggle anim, etc)
+				this.gameObject.SendMessage("OnDialogueChosen");
 							
 				if ( c.is_plot_point.Equals(true)){
 				
