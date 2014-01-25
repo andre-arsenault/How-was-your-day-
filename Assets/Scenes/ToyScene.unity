@@ -1383,7 +1383,734 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+<<<<<<< HEAD
 --- !u!1 &1771946308
+=======
+--- !u!1 &1745734984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1745734989}
+  - 212: {fileID: 1745734988}
+  - 61: {fileID: 1745734987}
+  - 114: {fileID: 1745734986}
+  - 114: {fileID: 1745734985}
+  - 114: {fileID: 1745734990}
+  m_Layer: 0
+  m_Name: TrainToy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1745734985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745734984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e0bfcb76646304f9f8c828db1924ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp: {fileID: 0}
+  aspect: 
+  score: 0
+--- !u!114 &1745734986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745734984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e47d43ce2919414bb46cda8a5b8be24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 42a2f64b19f8d3c4ca3b4b7e435efd58, type: 3}
+  cursorMode: 1
+  cursorHotSpot: {x: 0, y: 0}
+  scaleIncrease: .0599999987
+  scaleSpeed: 6
+--- !u!61 &1745734987
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745734984}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 10.0200005, y: 4.63999987}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &1745734988
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745734984}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_SortingLayerID: 3784897855
+  m_Sprite: {fileID: 21300000, guid: dfd2f5c141941eb4da25c2e925e6630d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1745734989
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745734984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.22735381, y: -2.26073074, z: 0}
+  m_LocalScale: {x: .25, y: .25, z: .25}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1745734990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745734984}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb3e1fdfa547af4990024e3ef8b51de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSkin: {fileID: 11400000, guid: bcb23eae559494fb7b26ddfd27aa676e, type: 2}
+  startOn: 0
+  defaultImg: {fileID: 0}
+  defaultAudio: {fileID: 0}
+  dialogue:
+  - name: 0
+    longText: Hello Train! How was your day?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: It was OK I guess
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Fine
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I'm quite chuffed today
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: It really sped by!
+      next: 1
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 1
+    longText: What did you do today Train?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I explored the southern route of the room. There was still Halloween
+        candy from last year stuck to the floor. It was kind of gross.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I played tug of war against car. Car didn't stand a chance against
+        my steam engine.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: I explored the house and fought off some bandits. Let's just say
+        they won't be crossing me again.
+      next: 2
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 2
+    longText: 'Train, isn''t it difficult to drive with two steam engines pulling
+      in different directions? '
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: We aren't always pulling in different directions. We can help each
+        other if one of us gets tired. When we go somewhere, I pull and on the way
+        back the other engine will pull.
+      next: 6
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: It is terribly difficult when the other engine pulls against me.
+        It is much stronger than car and it is dangerous for the cargo.
+      next: 8
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 3
+    longText: That's not very nice! Why doesn't other engine want to play fair with
+      you?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: 'Because there is only one thing in the engines'' life that matters
+        above all others: the cargo. And both of us think we know what is the best
+        place for the cargo.'
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Because other engine and I want different things.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 4
+    longText: What are you going to do with your cargo? I'm sure Bunny is very sad
+      with all the fighting and loves you both.
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: You're right. If we were to go our seperate tracks, the cargo would
+        suffer the most. It just wouldn't know where to go without us. We will stay
+        together and make sure that our cargo is safe.
+      next: 5
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: ' The cargo isn''t to blame for the engines'' problems, but if both
+        engines pull in opposing directions no one will ever go anywhere. We can go
+        our separate ways and arrange for the cargo to be taken care of between us.
+        Depending on where the cargo needs to be.'
+      next: 10
+      editor: 0
+      is_plot_point: 1
+      aspect: Divorce
+      good_ending: 0
+    - shortText: I don't care what happens, but I'm never letting the other engine
+        keep the cargo. Better that no one has the cargo than that other engine!
+      next: 11
+      editor: 0
+      is_plot_point: 1
+      aspect: Divorce
+      good_ending: 0
+    - shortText: We engines will go our seperate tracks. But I'm not letting other
+        train have cargo. No way. I'll fight for cargo with my last puff.
+      next: 12
+      editor: 0
+      is_plot_point: 1
+      aspect: Divorce
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 5
+    longText: You really think would be possible, Train?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: I think so, but the cargo should probably help me. With cargo's help
+        we could persuade the other engine to go in the right direction.
+      next: 13
+      editor: 0
+      is_plot_point: 1
+      aspect: Divorce
+      good_ending: 1
+    - shortText: We'll just have to do our best to make sure that our cargo doesn't
+        suffer from our disagreements. We would never want to lose our precious cargo.
+      next: 14
+      editor: 0
+      is_plot_point: 1
+      aspect: Divorce
+      good_ending: 1
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 6
+    longText: How can you be a team if you never agree on anything?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: You're right. The other engine never plays fair! What a meanie!
+      next: 3
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Teams don't always need agree on everything. The cargo doesn't need
+        both engines all the time. We can each drive the cargo around where it needs
+        to be. It would still be a team, maybe even a family.
+      next: 15
+      editor: 0
+      is_plot_point: 1
+      aspect: Divorce
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 7
+    longText: How can you be a team if you never agree on anything?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: You're right. The other engine never plays fair! What a meanie!
+      next: 3
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Teams don't always need agree on everything. The cargo doesn't need
+        both engines all the time. We can each drive the cargo around where it needs
+        to be. It would still be a team, maybe even a family.
+      next: 1
+      editor: 0
+      is_plot_point: 1
+      aspect: Divorce
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 8
+    longText: That's awful! Why would the engines pull the cargo in different directions
+      then?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: That's because the other engine is trying to oppose what's good for
+        me, and what's good for the cargo. It's a selfish engine. Bah!
+      next: 3
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: 'The other engine and I, we have different views. But we can take
+        turns pulling and we can end up in unexpected and wonderful places. We''re
+        a team of explorers.
+
+'
+      next: 6
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 9
+    longText: Oh no! Not Bunny! What will happen to Bunny then?
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Bunny might be left all alone on the railroad tracks.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 1
+    narration: []
+    script: 
+  - name: 10 TERM_APART_POSITIVE
+    longText: At least this way cargo will have both of you
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Bunny might be left all alone on the railroad tracks.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 11 TERM_LOSE_LOSE
+    longText: If you're going to be like that, none of you are going to have the cargo
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Bunny might be left all alone on the railroad tracks.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 12 TERM_CARGO_SUFFERS
+    longText: The cargo is going to be the one who suffers in the end
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Bunny might be left all alone on the railroad tracks.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 13 TERM_CARGO_MANIPULATED
+    longText: I'm sure cargo will be more than happy to help with the issue
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Bunny might be left all alone on the railroad tracks.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 14 TERM_EVERYONE_HAPPY
+    longText: If you can get this all to work, I think you're all going to be much
+      happier
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Bunny might be left all alone on the railroad tracks.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  - name: 15 TERM_GOOD_SEPERATION
+    longText: I suppose you're right. It might even be better for cargo like that.
+    img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
+    choices:
+    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    - shortText: Bunny might be left all alone on the railroad tracks.
+      next: 4
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    choiceMode: 0
+    links: []
+    next: 0
+    editor: 0
+    pos: 0
+    passwords: []
+    incorrect: 0
+    exit:
+      shortText: 
+      next: 0
+      editor: 0
+      is_plot_point: 0
+      aspect: 
+      good_ending: 0
+    align: 0
+    mode: 4
+    narration: []
+    script: 
+  bools: 01010000
+  ints: 00000000000000000000000000000000
+  strings:
+  - 
+  - 
+  - 
+  - 
+--- !u!1 &1826729822
+>>>>>>> 8e2fc1826715b0cd9a583cd284a87d19c7ee7dc2
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
