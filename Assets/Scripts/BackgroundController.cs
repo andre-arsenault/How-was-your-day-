@@ -27,6 +27,11 @@ public class BackgroundController : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = backgrounds[index];
     }
 
+    public void SetBackground(Sprite sprite)
+    {
+        GetComponent<SpriteRenderer>().sprite = sprite;
+    }
+
     void Awake()
     {
         backgrounds = Resources.LoadAll<Sprite>("Sprites/Backgrounds");

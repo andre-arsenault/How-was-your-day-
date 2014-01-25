@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System;
 public class ToyController : MonoBehaviour
 {
     Sprite[] backgrounds;
@@ -19,7 +18,7 @@ public class ToyController : MonoBehaviour
     {
         backgrounds = Resources.LoadAll<Sprite>("Sprites/" + gameObject.name);
         backgroundController = GameObject.Find("ToysBackground").GetComponent<BackgroundController>();
-        backgroundController.SetBackground(2);
+        backgroundController.SetBackground(0);
 
         focusedToy = GameObject.Find("ToyFocused");
 
@@ -40,16 +39,14 @@ public class ToyController : MonoBehaviour
         // Start the dialogue
         dialogue.startOn = 0;
         dialogue.enabled = true;
-
-        StartCoroutine(DialogueEnded());
     }
 
-    IEnumerator DialogueEnded()
+    public void OnDialogueEnd(string aspect)
     {
-        yield return new WaitForSeconds(3);
-
-        // Select the bed scene background
-        backgroundController.SetBackground(0);
         focusedToy.GetComponent<SpriteRenderer>().sprite = null;
+
+        int aspectEnding = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
+
+        backgroundController.SetBackground(Resources.Load<Sprite>("Aspects/" + aspect + "/" + aspectEnding + ".jpg"));
     }
 }
