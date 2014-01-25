@@ -1083,7 +1083,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 669991043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.04349136, z: 0}
   m_LocalScale: {x: .75, y: .75, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1126,7 +1126,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_SortingLayerID: 3965318387
-  m_Sprite: {fileID: 21300000, guid: cf309c43db815fe449df79482bf1b08f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 922294df917387143993feb5113ba63f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1826729824
 Transform:
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826729822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f4ff4885fab1c40889148f5980bb2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 43d70a5be1374764dbadf0725c9bc1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1896307166
@@ -1220,6 +1220,7 @@ GameObject:
   - 92: {fileID: 1896307169}
   - 124: {fileID: 1896307168}
   - 81: {fileID: 1896307167}
+  - 114: {fileID: 1896307172}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1288,3 +1289,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1896307172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1896307166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f4d919c9ac5e746a70a92bb8c4a144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

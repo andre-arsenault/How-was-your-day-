@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
+using UnityEngine;
+
 public class ToyController : MonoBehaviour
 {
     Sprite[] backgrounds;
