@@ -27,7 +27,8 @@ var strings : String[] = ["","","",""];
 private var jumpto : int;
 private var s : Vector2 = Vector2.zero;
 
-var score;
+private var score;
+private var aspectModified : String;
 	
 class DialogueEntry {
 	
@@ -59,7 +60,6 @@ class DialogueEntry {
 		align = 0;
 		exit = new DialogueChoice("Exit");
 		mode = 0;
-		is_plot_point = true;
 	}
 }
 class DialogueChoice {
@@ -91,9 +91,7 @@ class Link {
 }
 
 function Awake () {
-
 	score = this.gameObject.GetComponent(Score);
-
 }
 
 function Start () {
@@ -241,6 +239,7 @@ function ParseText (s:String) {
 
 function EndDialogue() {
 	this.enabled = false;
+	this.gameObject.SendMessage("OnDialogueEnd", aspectModified);
 }
 
 function ShowPassword () {
@@ -329,7 +328,8 @@ function ShowList () {
 							
 				if ( c.is_plot_point.Equals(true)){
 				
-					score.good_endings[c.aspect] = c.good_ending; 
+					score.good_endings[c.aspect] = c.good_ending;
+					aspectModified = c.aspect;
 					Debug.Log(" Does the aspect with the name " + c.aspect + " have good ending?  " + score.good_endings[c.aspect]);
 				}
 				toLoad = c.next;

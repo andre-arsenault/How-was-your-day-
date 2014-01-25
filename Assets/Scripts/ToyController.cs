@@ -34,4 +34,9 @@ public class ToyController : MonoBehaviour
         dialogue.startOn = 0;
         dialogue.enabled = true;
     }
+
+	void OnDialogueEnd(string aspect)
+	{
+		Debug.Log(string.Format("OnDialogueEnd({0}]) called!", aspect));
+	}
 }
