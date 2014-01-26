@@ -1529,7 +1529,7 @@ MonoBehaviour:
   aspect: 
   score: 0
   audio: {fileID: 0}
-  maxRotationAngle: .00999999978
+  maxRotationAngle: .0299999993
 --- !u!114 &1745734986
 MonoBehaviour:
   m_ObjectHideFlags: 0
