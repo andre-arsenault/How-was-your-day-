@@ -1,6 +1,6 @@
 ﻿using System;
-using UnityEngine;
 using System.Linq;
+using UnityEngine;
 
 public class ToyController : MonoBehaviour
 {
@@ -90,13 +90,13 @@ public class ToyController : MonoBehaviour
     {
         if (rotate)
         {
-            focusedToy.transform.Rotate(new Vector3(0f, 0f, rotationAngle) * (Time.deltaTime * 1000f));
+            focusedToy.transform.Rotate(new Vector3(0f, 0f, rotationAngle) * (Time.deltaTime * 600f));
 
             if (focusedToy.transform.rotation.z < rotationAngle)
                 rotate = false;
         }
         else if (focusedToy.transform.rotation.z < 0f)
-            focusedToy.transform.Rotate(new Vector3(0f, 0f, -rotationAngle) * (Time.deltaTime * 1000f));
+            focusedToy.transform.Rotate(new Vector3(0f, 0f, -rotationAngle) * (Time.deltaTime * 600f));
         else if (focusedToy.transform.rotation.z > 0f)
             focusedToy.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
     }
