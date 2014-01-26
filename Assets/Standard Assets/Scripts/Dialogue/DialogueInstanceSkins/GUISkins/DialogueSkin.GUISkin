@@ -15,7 +15,7 @@ MonoBehaviour:
   m_box:
     m_Name: box
     m_Normal:
-      m_Background: {fileID: 2800000, guid: edbba750aa94b4b7ebd749a05f433320, type: 3}
+      m_Background: {fileID: 2800000, guid: 2263b1706ff2d49048e65ce6ca05e8cd, type: 3}
       m_TextColor: {r: .235294119, g: .235294119, b: .235294119, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
@@ -1543,7 +1543,7 @@ MonoBehaviour:
     m_StretchHeight: 0
   - m_Name: textbox
     m_Normal:
-      m_Background: {fileID: 2800000, guid: edbba750aa94b4b7ebd749a05f433320, type: 3}
+      m_Background: {fileID: 2800000, guid: 2263b1706ff2d49048e65ce6ca05e8cd, type: 3}
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
