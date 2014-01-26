@@ -61,6 +61,10 @@ public class ToyController : MonoBehaviour
             toy.GetComponent<CursorChanger>().ResetMouse();
             toy.GetComponent<SpriteRenderer>().enabled = false;
             toy.GetComponent<BoxCollider2D>().enabled = false;
+
+            GameObject shadow = GameObject.Find(toy.name.Replace("Toy", "Shadow"));
+            if (shadow != null)
+                shadow.GetComponent<SpriteRenderer>().enabled = false;
         }
 
         // Set the focused toy

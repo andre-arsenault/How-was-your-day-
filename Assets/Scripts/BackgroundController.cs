@@ -52,6 +52,10 @@ public class BackgroundController : MonoBehaviour
             toy.GetComponent<SpriteRenderer>().enabled = true;
             toy.GetComponent<BoxCollider2D>().enabled = true;
             toy.GetComponent<CursorChanger>().SetMouse();
+
+            GameObject shadow = GameObject.Find(toy.name.Replace("Toy", "Shadow"));
+            if (shadow != null)
+                shadow.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 }

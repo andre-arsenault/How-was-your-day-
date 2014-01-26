@@ -100,7 +100,7 @@ public class BackGroundSwitch : MonoBehaviour
 
     void Update()
     {
-        //finale = GameObject.FindGameObjectsWithTag("Toys").All(t => !string.IsNullOrEmpty(t.GetComponent<ToyController>().aspect));
+        finale = GameObject.FindGameObjectsWithTag("Toys").All(t => !string.IsNullOrEmpty(t.GetComponent<ToyController>().aspect));
 
         //The simpler state we go from Normal -> Blur background. We also make the corresponding animal appear
         //We get the information about the focused animal from the ToyController.cs script.
