@@ -289,6 +289,21 @@ public class BackGroundSwitch : MonoBehaviour
 
     IEnumerator Keep_Message()
     {
+
+		yield return new WaitForSeconds(4);
+		temp_color.a = 0;
+		back_ground_blur.color = temp_color;
+		back_ground_end.color = temp_color;
+		back_ground_black.color = temp_color;
+		back_ground_message.color = temp_color;
+
+		back_ground_credits.color = temp_color;
+		back_ground_credits2.color = temp_color;
+		temp_color.a = 1;
+		back_ground_finale.color = temp_color;
+
+
+		/*
         if (message_first_time)
         {
             yield return new WaitForSeconds(keep_message);
@@ -299,13 +314,13 @@ public class BackGroundSwitch : MonoBehaviour
         if ( back_ground_finale.color.a == 1 ) {
             yield return null;
 			
-        }*/
+        }
 
         FadeOut(back_ground_message);
         FadeIn(back_ground_finale);
 
         yield return null;
-
+		*/
     }
 
     IEnumerator ShowCredits()
@@ -333,7 +348,23 @@ public class BackGroundSwitch : MonoBehaviour
     }
 
     IEnumerator ShowCredits2()
-    {
+	{
+		yield return new WaitForSeconds(4);
+		temp_color.a = 0;
+		back_ground_blur.color = temp_color;
+		back_ground_end.color = temp_color;
+		back_ground_black.color = temp_color;
+		back_ground_message.color = temp_color;
+		back_ground_finale.color = temp_color;
+		back_ground_credits.color = temp_color;
+
+		temp_color.a = 1;
+		back_ground_credits2.color = temp_color;
+
+		yield return new WaitForSeconds(4);
+		Application.LoadLevel("MenuScene");
+
+		/*
         if (show_credits_second)
         {
             yield return new WaitForSeconds(4);
@@ -350,7 +381,7 @@ public class BackGroundSwitch : MonoBehaviour
 
         }
 
-        yield return null;
+        yield return null;*/
 
     }
 }
