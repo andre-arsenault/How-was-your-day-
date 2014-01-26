@@ -257,7 +257,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I looked at the moon, and it was so beautiful I couldn't stop howling
+    - shortText: I looked at the moon, and it was so beautiful I couldn't stop howling.
       next: 2
       editor: 0
       is_plot_point: 0
