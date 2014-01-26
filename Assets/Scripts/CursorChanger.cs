@@ -55,7 +55,7 @@ public class CursorChanger : MonoBehaviour
     {
         if (this.enabled)
         {
-            Cursor.SetCursor(cursorTexture, cursorHotSpot, cursorMode);
+            SetMouse();
             isActive = false;
         }
     }
@@ -66,6 +66,11 @@ public class CursorChanger : MonoBehaviour
     {
         isActive = false;
         Cursor.SetCursor(null, cursorHotSpot, cursorMode);
+    }
+
+    public void SetMouse()
+    {
+        Cursor.SetCursor(cursorTexture, cursorHotSpot, cursorMode);
     }
 
     /// <summary>

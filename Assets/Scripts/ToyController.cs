@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.Linq;
 
 public class ToyController : MonoBehaviour
 {
@@ -121,5 +122,19 @@ public class ToyController : MonoBehaviour
         bg_switch.aspect = aspect;
         bg_switch.enter_dialogue = false;
         bg_switch.exit_dialogue = true;
+    }
+
+
+
+    public void ReactivateHiddenToys()
+    {
+        GameObject[] toys = GameObject.FindGameObjectsWithTag("Toys").Where(t => string.IsNullOrEmpty(t.GetComponent<ToyController>().aspect)).ToArray();
+
+        foreach (GameObject toy in toys)
+        {
+            toy.GetComponent<CursorChanger>().enabled = true;
+            toy.GetComponent<SpriteRenderer>().enabled = true;
+            toy.GetComponent<CursorChanger>().SetMouse();
+        }
     }
 }
