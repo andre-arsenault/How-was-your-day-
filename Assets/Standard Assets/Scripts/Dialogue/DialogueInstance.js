@@ -205,9 +205,9 @@ function DoNextButton () {
 	*/
 	case 4:
 		if (lineCount<parsedText.length-1) {
-		if (GUI.Button(Rect(20,Screen.height-84,64,64),"Next","arrow")) ProgressLineCount();
+		if (GUI.Button(Rect(20,Screen.height-148,128,128),"Next","arrow")) ProgressLineCount();
 		} else {
-		if (GUI.Button(Rect(20,Screen.height-84,64,64),"Next","arrow")) EndDialogue();
+		if (GUI.Button(Rect(20,Screen.height-148,128,128),"Next","arrow")) EndDialogue();
 		}
 	break;
 	}
