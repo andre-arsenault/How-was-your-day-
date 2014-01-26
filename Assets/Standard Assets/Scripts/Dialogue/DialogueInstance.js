@@ -204,11 +204,13 @@ function DoNextButton () {
 	break;
 	*/
 	case 4:
+		GUILayout.BeginArea(Rect(0,Screen.height-150,Screen.width,150),"","box");
 		if (lineCount<parsedText.length-1) {
-		if (GUI.Button(Rect(20,Screen.height-84,64,64),"Next","arrow")) ProgressLineCount();
+			if (GUILayout.Button("Next","arrow", GUILayout.Width(128), GUILayout.Height(128))) ProgressLineCount();
 		} else {
-		if (GUI.Button(Rect(20,Screen.height-84,64,64),"Next","arrow")) EndDialogue();
+			if (GUILayout.Button("Next","arrow", GUILayout.Width(128), GUILayout.Height(128))) EndDialogue();
 		}
+		GUILayout.EndArea();
 	break;
 	}
 }
