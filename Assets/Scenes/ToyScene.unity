@@ -261,19 +261,19 @@ MonoBehaviour:
     longText: Hello Wolf! How was your day?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It was OK I guess.
+    - shortText: $ It was OK I guess.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Fine.
+    - shortText: $ Fine.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It was a howler.
+    - shortText: $ It was a howler.
       next: 1
       editor: 0
       is_plot_point: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -301,25 +301,25 @@ MonoBehaviour:
     longText: What did you do today, wolf?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I chased after my own tail for hours. Almost caught it this time.
+    - shortText: $ I chased after my own tail for hours. Almost caught it this time.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I looked at the moon, and it was so beautiful I couldn't stop howling.
+    - shortText: $ I looked at the moon, and it was so beautiful I couldn't stop howling.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I was very hungry. Like well... a wolf.
+    - shortText: $ I was very hungry. Like well... a wolf.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I met a girl dressed in red who was walking through the forest. She
+    - shortText: $ I met a girl dressed in red who was walking through the forest. She
         was delicious.
       next: 13
       editor: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -348,13 +348,13 @@ MonoBehaviour:
     longText: Are you alone? Where is the rest of your pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I don't have a pack. I roam alone.
+    - shortText: $ I don't have a pack. I roam alone.
       next: 3
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I'll soon be with my pack again. We're off doing different tasks
+    - shortText: $ I'll soon be with my pack again. We're off doing different tasks
         at the moment.
       next: 10
       editor: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -383,19 +383,19 @@ MonoBehaviour:
     longText: Why is that, Wolf? Why don't you have a pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: The pack doesn't like me. They do not want me running with them.
+    - shortText: $ The pack doesn't like me. They do not want me running with them.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Meh, I don't really like the pack. I don't want to run with them.
+    - shortText: $ Meh, I don't really like the pack. I don't want to run with them.
       next: 7
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I am a lone wolf and I like it that way.
+    - shortText: $ I am a lone wolf and I like it that way.
       next: 8
       editor: 0
       is_plot_point: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -423,20 +423,20 @@ MonoBehaviour:
     longText: But you're such a cute wolf. Why doesn't the pack like you?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I am too weak. I can't even get the scraps when other wolves are
+    - shortText: $ I am too weak. I can't even get the scraps when other wolves are
         around.
       next: 5
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I haven't found the right fit and I like being a lone wolf.
+    - shortText: $ I haven't found the right fit and I like being a lone wolf.
       next: 6
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: The other wolves think I'm mean. They are all jealous of my superior
+    - shortText: $ The other wolves think I'm mean. They are all jealous of my superior
         skill. I'm just better than them, what can I do? It's not my fault they're
         all stupid.
       next: 16
@@ -452,7 +452,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -467,14 +467,14 @@ MonoBehaviour:
       and stronger!
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I will never give up. I will become strong and maybe even lead my
+    - shortText: $ I will never give up. I will become strong and maybe even lead my
         own pack in the future.
       next: 17
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: That's sound like a lot of work. It's too hard. I'll just die alone.
+    - shortText: $ That's sound like a lot of work. It's too hard. I'll just die alone.
       next: 18
       editor: 0
       is_plot_point: 1
@@ -488,7 +488,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -502,21 +502,21 @@ MonoBehaviour:
     longText: Why is that? Don't you get along with the other wolves?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No, I don't. And it's their fault. If they don't want me, they can
+    - shortText: $ No, I don't. And it's their fault. If they don't want me, they can
         stay without me. Their loss!
       next: 19
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 0
-    - shortText: I don't get along with these ones. But that's no reason to give up.
+    - shortText: $ I don't get along with these ones. But that's no reason to give up.
         I'll keep looking for a pack where I will fit in.
       next: 17
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: I'm too different. I think I prefer to stay alone. After all, I like
+    - shortText: $ I'm too different. I think I prefer to stay alone. After all, I like
         it fine as it is.
       next: 8
       editor: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -545,14 +545,14 @@ MonoBehaviour:
     longText: Why don't you like the others, Wolfy?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: They are too below me. I don't want to run with weaklings. They know
+    - shortText: $ They are too below me. I don't want to run with weaklings. They know
         this and don't like me either.
       next: 16
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 0
-    - shortText: I just never found a pack that I wanted to join.
+    - shortText: $ I just never found a pack that I wanted to join.
       next: 6
       editor: 0
       is_plot_point: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -580,14 +580,14 @@ MonoBehaviour:
     longText: Why do you prefer to be alone Wolfy?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: The other wolves plan bad things against me behind my back. I don't
+    - shortText: $ The other wolves plan bad things against me behind my back. I don't
         want to stay with them.
       next: 19
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 0
-    - shortText: I am stronger alone.
+    - shortText: $ I am stronger alone.
       next: 9
       editor: 0
       is_plot_point: 0
@@ -601,7 +601,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -615,14 +615,14 @@ MonoBehaviour:
     longText: Don't you think you would be even stronger as a pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Maybe you're right. I will find a pack and we will all be stronger
+    - shortText: $ Maybe you're right. I will find a pack and we will all be stronger
         together.
       next: 17
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: No, they will only hold me back. I will remain a lone wolf.
+    - shortText: $ No, they will only hold me back. I will remain a lone wolf.
       next: 20
       editor: 0
       is_plot_point: 1
@@ -636,7 +636,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -650,20 +650,20 @@ MonoBehaviour:
     longText: Oh? What are you doing then?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I am catching up with the rest. They've gotten a bit ahead of me.
+    - shortText: $ I am catching up with the rest. They've gotten a bit ahead of me.
         They're just so much faster than me.
       next: 11
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I'm scouting for prey, the rest of the pack are waiting for my signal.
+    - shortText: $ I'm scouting for prey, the rest of the pack are waiting for my signal.
       next: 11
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I am relaxing. The rest of the pack is working. They'll be here in
+    - shortText: $ I am relaxing. The rest of the pack is working. They'll be here in
         a while.
       next: 12
       editor: 0
@@ -678,7 +678,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -692,20 +692,20 @@ MonoBehaviour:
     longText: Are you happy with this role in the pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No. I will be better alone. I don't need to follow the rest of them.
+    - shortText: $ No. I will be better alone. I don't need to follow the rest of them.
       next: 20
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 0
-    - shortText: No. But I will become stronger. I will become faster. I will catch
+    - shortText: $ No. But I will become stronger. I will become faster. I will catch
         the biggest prey and have the biggest lair.
       next: 21
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: Yes. I love it. My pack is the best. Hoooooowl!
+    - shortText: $ Yes. I love it. My pack is the best. Hoooooowl!
       next: 22
       editor: 0
       is_plot_point: 1
@@ -719,7 +719,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -733,26 +733,26 @@ MonoBehaviour:
     longText: Are you happy with this role in the pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Yes. I am well-respected.
+    - shortText: $ Yes. I am well-respected.
       next: 22
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: Yes. I like leading and my pack is the best.
+    - shortText: $ Yes. I like leading and my pack is the best.
       next: 22
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: No. I'd like to have a bigger, stronger pack.  But really it's only
+    - shortText: $ No. I'd like to have a bigger, stronger pack.  But really it's only
         a matter of time with me as their glorious leader.
       next: 21
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: No. They are holding me back. I will be better alone.
+    - shortText: $ No. They are holding me back. I will be better alone.
       next: 20
       editor: 0
       is_plot_point: 1
@@ -766,7 +766,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -780,13 +780,13 @@ MonoBehaviour:
     longText: You ate a girl?!
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, I had to get rid of her grandmother's aftertaste.
+    - shortText: $ Well, I had to get rid of her grandmother's aftertaste.
       next: 14
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Yeah, it was a pretty bad idea though, a lumberjack tried to cut
+    - shortText: $ Yeah, it was a pretty bad idea though, a lumberjack tried to cut
         her out of my stomach. He obviously doesn't know how eating people works.
       next: 14
       editor: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -815,19 +815,19 @@ MonoBehaviour:
     longText: You are a scary wolf!
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I'm just kidding. I would never eat little girls.
+    - shortText: $ I'm just kidding. I would never eat little girls.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Why... thank you.
+    - shortText: $ Why... thank you.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: This cuteness is just a facade! I'm really a wild beast!
+    - shortText: $ This cuteness is just a facade! I'm really a wild beast!
       next: 15
       editor: 0
       is_plot_point: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -855,19 +855,19 @@ MonoBehaviour:
     longText: '...'
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -896,19 +896,19 @@ MonoBehaviour:
       you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -922,7 +922,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -937,19 +937,19 @@ MonoBehaviour:
       in no time!
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -978,19 +978,19 @@ MonoBehaviour:
       with you either.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1018,19 +1018,19 @@ MonoBehaviour:
     longText: They're going to stay without you, and you without them.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -1044,7 +1044,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1058,19 +1058,19 @@ MonoBehaviour:
     longText: If you're happier alone, I guess that works for you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1098,19 +1098,19 @@ MonoBehaviour:
     longText: That's what I want to hear. Work hard and become stronger.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -1124,7 +1124,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1138,19 +1138,19 @@ MonoBehaviour:
     longText: I'm happy that you're happy.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: No actually, it's not a facade. I really am just this cute.
+    - shortText: $ No actually, it's not a facade. I really am just this cute.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Don't worry, I'm joking. Wasn't that a howler?
+    - shortText: $ Don't worry, I'm joking. Wasn't that a howler?
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hooooooowl!!! Why aren't you laughing? It was a joke!
+    - shortText: $ Hooooooowl!!! Why aren't you laughing? It was a joke!
       next: 2
       editor: 0
       is_plot_point: 0
@@ -1164,7 +1164,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1402,19 +1402,19 @@ MonoBehaviour:
     longText: Hello Monkey! How was your day?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: The day was fine.
+    - shortText: $ The day was fine.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Fine.
+    - shortText: $ Fine.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It was bananas!
+    - shortText: $ It was bananas!
       next: 1
       editor: 0
       is_plot_point: 0
@@ -1428,7 +1428,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1442,19 +1442,19 @@ MonoBehaviour:
     longText: What did you do today, Monkey?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I went to monkey school and played with the other monkeys.
+    - shortText: $ I went to monkey school and played with the other monkeys.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Hung around with the other toys.
+    - shortText: $ Hung around with the other toys.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Went on a wild adventure.
+    - shortText: $ Went on a wild adventure.
       next: 2
       editor: 0
       is_plot_point: 0
@@ -1468,7 +1468,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1482,19 +1482,19 @@ MonoBehaviour:
     longText: Monkey, what is wrong with your arm? It looks like you're hurt.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's nothing. I'm fine.
+    - shortText: $ It's nothing. I'm fine.
       next: 3
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: My game with Teddy and the Train got a little out of hand.
+    - shortText: $ My game with Teddy and the Train got a little out of hand.
       next: 10
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Another Toy hurt me.
+    - shortText: $ Another Toy hurt me.
       next: 15
       editor: 0
       is_plot_point: 0
@@ -1508,7 +1508,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1523,19 +1523,19 @@ MonoBehaviour:
       happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's nothing. It doesn't hurt. I can take it, I'm a tough monkey.
+    - shortText: $ It's nothing. It doesn't hurt. I can take it, I'm a tough monkey.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It's nothing. Really it's nothing.
+    - shortText: $ It's nothing. Really it's nothing.
       next: 5
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It's nothing. I'm used to them. I can handle them.
+    - shortText: $ It's nothing. I'm used to them. I can handle them.
       next: 8
       editor: 0
       is_plot_point: 0
@@ -1549,7 +1549,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1563,20 +1563,20 @@ MonoBehaviour:
     longText: Come on Mister Monkey, tell me what happened.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I don't want to talk about it! Teddy asked about it and got what
+    - shortText: $ I don't want to talk about it! Teddy asked about it and got what
         he deserved. Stop asking.
       next: 20
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: I don't want to talk about it. Leave me alone.
+    - shortText: $ I don't want to talk about it. Leave me alone.
       next: 21
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: There isn't much to tell. Don't worry about it.
+    - shortText: $ There isn't much to tell. Don't worry about it.
       next: 5
       editor: 0
       is_plot_point: 1
@@ -1590,7 +1590,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1604,7 +1604,7 @@ MonoBehaviour:
     longText: I think there's more to it, Monkey. What are you hiding?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Nothing happened, but I want to tell you about the game I played
+    - shortText: $ Nothing happened, but I want to tell you about the game I played
         with Teddy.
       next: 6
       editor: 0
@@ -1619,7 +1619,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1633,20 +1633,20 @@ MonoBehaviour:
     longText: Okay Mister Monkey, tell me about your game with Teddy.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: We were having a lot of fun, but then... I made him angry...
+    - shortText: $ We were having a lot of fun, but then... I made him angry...
       next: 7
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Well, Teddy made us a bunch of cookies. We had a cookie-eating competition
+    - shortText: $ Well, Teddy made us a bunch of cookies. We had a cookie-eating competition
         and I won.
       next: 19
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: OK! Bunny and Teddy traveled around the world in the happy choo-choo
+    - shortText: $ OK! Bunny and Teddy traveled around the world in the happy choo-choo
         train. Where life was always perfect and nothing bad ever happened.
       next: 19
       editor: 0
@@ -1661,7 +1661,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1675,14 +1675,14 @@ MonoBehaviour:
     longText: Oh no! And then he hurt you? Poor Monkey! Let me help you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I don't want your help. My arm is fine, there's nothing to worry
+    - shortText: $ I don't want your help. My arm is fine, there's nothing to worry
         about.
       next: 21
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: Thank you. I already told teacher. She said, "Little monkeys shouldn't
+    - shortText: $ Thank you. I already told teacher. She said, "Little monkeys shouldn't
         be hurt," and promised to help me.
       next: 22
       editor: 0
@@ -1697,7 +1697,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1711,13 +1711,13 @@ MonoBehaviour:
     longText: What do you mean? Does this happen a lot, Mister Monkey?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I deserve it. I'm a bad monkey.
+    - shortText: $ I deserve it. I'm a bad monkey.
       next: 23
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 1
-    - shortText: Another toy is always angry at me. There's nothing I can do about
+    - shortText: $ Another toy is always angry at me. There's nothing I can do about
         it. He hits me all the time.
       next: 9
       editor: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1746,14 +1746,14 @@ MonoBehaviour:
     longText: That is awful, Mister Monkey. We should get you some help.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Nobody can help me. Anyway I'm used to it now. There's no need to
+    - shortText: $ Nobody can help me. Anyway I'm used to it now. There's no need to
         make a fuss.
       next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: Thank you. I already told teacher. She said, "Little monkeys shouldn't
+    - shortText: $ Thank you. I already told teacher. She said, "Little monkeys shouldn't
         be hurt," and promised to help me.
       next: 22
       editor: 0
@@ -1768,7 +1768,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1782,7 +1782,7 @@ MonoBehaviour:
     longText: Oh Mister Monkey! You should be more careful next time. What happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It was an accident.
+    - shortText: $ It was an accident.
       next: 11
       editor: 0
       is_plot_point: 0
@@ -1796,7 +1796,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1810,28 +1810,28 @@ MonoBehaviour:
     longText: An Accident? What happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's OK. It was a mistake and they promised it was never going to
+    - shortText: $ It's OK. It was a mistake and they promised it was never going to
         happen again.
       next: 5
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Well I was chasing Teddy and - and -  I slipped... and - I...  uh
+    - shortText: $ Well I was chasing Teddy and - and -  I slipped... and - I...  uh
         -  fell. That's all! I'm a clumsy monkey sometimes!
       next: 5
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Well someone hurt me, but I think it was an accident. I'm sure they
+    - shortText: $ Well someone hurt me, but I think it was an accident. I'm sure they
         didn't really mean to.
       next: 12
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It was my fault. I was being a bad monkey.
+    - shortText: $ It was my fault. I was being a bad monkey.
       next: 13
       editor: 0
       is_plot_point: 0
@@ -1845,7 +1845,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1859,13 +1859,13 @@ MonoBehaviour:
     longText: Someone hurt you on purpose? Poor Mister Monkey! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Nobody saw anything. There's nothing to do.
+    - shortText: $ Nobody saw anything. There's nothing to do.
       next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: Someone saw the accident happen and they told teacher. I think it
+    - shortText: $ Someone saw the accident happen and they told teacher. I think it
         will be better now...
       next: 22
       editor: 0
@@ -1880,7 +1880,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1894,14 +1894,14 @@ MonoBehaviour:
     longText: A bad monkey? Why?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I'm just a bad monkey. I know I have to be. I deserve everything
+    - shortText: $ I'm just a bad monkey. I know I have to be. I deserve everything
         I get.
       next: 23
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: I was disobedient. I shouldn't have been naughty and just obeyed.
+    - shortText: $ I was disobedient. I shouldn't have been naughty and just obeyed.
       next: 14
       editor: 0
       is_plot_point: 0
@@ -1915,7 +1915,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1929,14 +1929,14 @@ MonoBehaviour:
     longText: Disobeying! Oh monkey, you know that makes him angry! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I did something bad. I deserved it. He told me that many many times.
+    - shortText: $ I did something bad. I deserved it. He told me that many many times.
         So I should be better. Maybe next time I won't deserve it.
       next: 23
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: I don't know what I did. But I must have done something to deserve
+    - shortText: $ I don't know what I did. But I must have done something to deserve
         it. He loves me and wouldn't hurt me unless he had a good reason to.
       next: 23
       editor: 0
@@ -1951,7 +1951,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1965,19 +1965,19 @@ MonoBehaviour:
     longText: That's mean! They are very bad! Did you tell teacher?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It doesn't matter whether I told teacher. It wouldn't matter anyway.
+    - shortText: $ It doesn't matter whether I told teacher. It wouldn't matter anyway.
       next: 16
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: No.
+    - shortText: $ No.
       next: 17
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Yes.
+    - shortText: $ Yes.
       next: 18
       editor: 0
       is_plot_point: 0
@@ -1991,7 +1991,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2005,13 +2005,13 @@ MonoBehaviour:
     longText: Why not Mister Monkey? Why wouldn't it matter?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's my fault...Teacher shouldn't need to know.
+    - shortText: $ It's my fault...Teacher shouldn't need to know.
       next: 24
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: Teacher wouldn't believe me anyway. She doesn't want to help me.
+    - shortText: $ Teacher wouldn't believe me anyway. She doesn't want to help me.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -2025,7 +2025,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2039,14 +2039,14 @@ MonoBehaviour:
     longText: Why didn't you tell teacher? Teacher would have helped you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I don't want Teacher to know. He takes care of me and I don't want
+    - shortText: $ I don't want Teacher to know. He takes care of me and I don't want
         to make him look like a bad person.
       next: 22
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: Teacher would only make things worse. If teacher knows, it will just
+    - shortText: $ Teacher would only make things worse. If teacher knows, it will just
         make him angry. He hurts me when he's angry.
       next: 24
       editor: 0
@@ -2061,7 +2061,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2075,7 +2075,7 @@ MonoBehaviour:
     longText: That's a good monkey. What did teacher do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: She said, "Little monkeys shouldn't be hurt," and helped me.
+    - shortText: $ She said, "Little monkeys shouldn't be hurt," and helped me.
       next: 22
       editor: 0
       is_plot_point: 1
@@ -2089,7 +2089,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2111,7 +2111,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2133,7 +2133,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2155,7 +2155,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2177,7 +2177,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2199,7 +2199,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2221,7 +2221,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2840,25 +2840,25 @@ MonoBehaviour:
     longText: Hello Train! How was your day?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It was OK I guess.
+    - shortText: $ It was OK I guess.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Fine.
+    - shortText: $ Fine.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I'm quite chuffed today.
+    - shortText: $ I'm quite chuffed today.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It really sped by!
+    - shortText: $ It really sped by!
       next: 1
       editor: 0
       is_plot_point: 0
@@ -2872,7 +2872,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -2886,21 +2886,21 @@ MonoBehaviour:
     longText: What did you do today, Train?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I explored the southern route of the room. There was still Halloween
+    - shortText: $ I explored the southern route of the room. There was still Halloween
         candy from last year stuck to the floor. It was kind of gross.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I played tug of war against car. Car didn't stand a chance against
+    - shortText: $ I played tug of war against car. Car didn't stand a chance against
         my steam engine.
       next: 2
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I explored the house and fought off some bandits. Let's just say
+    - shortText: $ I explored the house and fought off some bandits. Let's just say
         they won't be crossing me again.
       next: 2
       editor: 0
@@ -2915,7 +2915,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -2930,7 +2930,7 @@ MonoBehaviour:
       different directions?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: We aren't always pulling in different directions. We can help each
+    - shortText: $ We aren't always pulling in different directions. We can help each
         other if one of us gets tired. When we go somewhere, I pull and on the way
         back the other engine will pull.
       next: 6
@@ -2938,7 +2938,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It is terribly difficult when the other engine pulls against me.
+    - shortText: $ It is terribly difficult when the other engine pulls against me.
         It is much stronger than car and it is dangerous for the cargo.
       next: 8
       editor: 0
@@ -2953,7 +2953,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -2968,7 +2968,7 @@ MonoBehaviour:
       you?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: 'Because there is only one thing in the engines'' life that matters
+    - shortText: ' $ Because there is only one thing in the engines'' life that matters
         above all others: the cargo. And both of us think we know what''s best for
         the cargo.'
       next: 4
@@ -2976,7 +2976,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Because the other engine and I want different things.
+    - shortText: $ Because the other engine and I want different things.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -2990,7 +2990,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3005,7 +3005,7 @@ MonoBehaviour:
       with all the fighting and loves you both.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: You're right. If we were to go our seperate tracks, the cargo would
+    - shortText: $ You're right. If we were to go our seperate tracks, the cargo would
         suffer the most. It just wouldn't know where to go without us. We will stay
         together and make sure that our cargo is safe.
       next: 5
@@ -3013,7 +3013,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: ' The cargo isn''t to blame for the engines'' problems, but if both
+    - shortText: $ ' The cargo isn''t to blame for the engines'' problems, but if both
         engines pull in opposing directions no one will ever go anywhere. We can go
         our separate ways and arrange for the cargo to be taken care of between us.
         Depending on where the cargo needs to be.'
@@ -3022,14 +3022,14 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Divorce
       good_ending: 0
-    - shortText: I don't care what happens, but I'm never letting the other engine
+    - shortText: $ I don't care what happens, but I'm never letting the other engine
         keep the cargo. Better that no one has the cargo than that other engine!
       next: 11
       editor: 0
       is_plot_point: 1
       aspect: Divorce
       good_ending: 0
-    - shortText: We engines will go our seperate tracks. But I'm not letting other
+    - shortText: $ We engines will go our seperate tracks. But I'm not letting other
         train have cargo. No way. I'll fight for cargo with my last puff.
       next: 12
       editor: 0
@@ -3044,7 +3044,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3058,14 +3058,14 @@ MonoBehaviour:
     longText: You really think would be possible, Train?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: I think so, but the cargo should probably help me. With cargo's help
+    - shortText: $ I think so, but the cargo should probably help me. With cargo's help
         we could persuade the other engine to go in the right direction.
       next: 13
       editor: 0
       is_plot_point: 1
       aspect: Divorce
       good_ending: 1
-    - shortText: We'll just have to do our best to make sure that our cargo doesn't
+    - shortText: $ We'll just have to do our best to make sure that our cargo doesn't
         suffer from our disagreements. We would never want to lose our precious cargo.
       next: 14
       editor: 0
@@ -3080,7 +3080,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3094,13 +3094,13 @@ MonoBehaviour:
     longText: How can you be a team if you never agree on anything?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: You're right. The other engine never plays fair! What a meanie!
+    - shortText: $ You're right. The other engine never plays fair! What a meanie!
       next: 3
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Teams don't always need agree on everything. The cargo doesn't need
+    - shortText: $ Teams don't always need agree on everything. The cargo doesn't need
         both engines all the time. We can each drive the cargo around where it needs
         to be. It would still be a team, maybe even a family.
       next: 15
@@ -3116,7 +3116,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3130,13 +3130,13 @@ MonoBehaviour:
     longText: How can you be a team if you never agree on anything?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: You're right. The other engine never plays fair! What a meanie!
+    - shortText: $ You're right. The other engine never plays fair! What a meanie!
       next: 3
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Teams don't always need agree on everything. The cargo doesn't need
+    - shortText: $ Teams don't always need agree on everything. The cargo doesn't need
         both engines all the time. We can each drive the cargo around where it needs
         to be. It would still be a team, maybe even a family.
       next: 1
@@ -3152,7 +3152,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3167,14 +3167,14 @@ MonoBehaviour:
       then?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: That's because the other engine is trying to oppose what's good for
+    - shortText: $ That's because the other engine is trying to oppose what's good for
         me, and what's good for the cargo. It's a selfish engine. Bah!
       next: 3
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: The other engine and I, we have different views. But we can take
+    - shortText: $ The other engine and I, we have different views. But we can take
         turns pulling and we can end up in unexpected and wonderful places. We're
         a team of explorers.
       next: 6
@@ -3190,7 +3190,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3204,13 +3204,13 @@ MonoBehaviour:
     longText: Oh no! Not Bunny! What will happen to Bunny then?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+    - shortText: $ Well, if Bunny is lucky it will be taken by one of the engines.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Bunny might be left all alone on the railroad tracks.
+    - shortText: $ Bunny might be left all alone on the railroad tracks.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3224,7 +3224,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3238,13 +3238,13 @@ MonoBehaviour:
     longText: At least this way cargo will have both of you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+    - shortText: $ Well, if Bunny is lucky it will be taken by one of the engines.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Bunny might be left all alone on the railroad tracks.
+    - shortText: $ Bunny might be left all alone on the railroad tracks.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3258,7 +3258,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3272,13 +3272,13 @@ MonoBehaviour:
     longText: If you're going to be like that, none of you are going to have the cargo.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+    - shortText: $ Well, if Bunny is lucky it will be taken by one of the engines.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Bunny might be left all alone on the railroad tracks.
+    - shortText: $ Bunny might be left all alone on the railroad tracks.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3292,7 +3292,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3306,13 +3306,13 @@ MonoBehaviour:
     longText: The cargo is going to be the one who suffers in the end.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+    - shortText: $ Well, if Bunny is lucky it will be taken by one of the engines.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Bunny might be left all alone on the railroad tracks.
+    - shortText: $ Bunny might be left all alone on the railroad tracks.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3326,7 +3326,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3340,13 +3340,13 @@ MonoBehaviour:
     longText: I'm sure cargo will be more than happy to help with the issue.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+    - shortText: $ Well, if Bunny is lucky it will be taken by one of the engines.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Bunny might be left all alone on the railroad tracks.
+    - shortText: $ Bunny might be left all alone on the railroad tracks.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3360,7 +3360,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3375,13 +3375,13 @@ MonoBehaviour:
       happier.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+    - shortText: $ Well, if Bunny is lucky it will be taken by one of the engines.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Bunny might be left all alone on the railroad tracks.
+    - shortText: $ Bunny might be left all alone on the railroad tracks.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3395,7 +3395,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3409,13 +3409,13 @@ MonoBehaviour:
     longText: I suppose you're right. It might even be better for cargo like that.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
+    - shortText: $ Well, if Bunny is lucky it will be taken by one of the engines.
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Bunny might be left all alone on the railroad tracks.
+    - shortText: $ Bunny might be left all alone on the railroad tracks.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3429,7 +3429,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: 
+      shortText: $ 
       next: 0
       editor: 0
       is_plot_point: 0
