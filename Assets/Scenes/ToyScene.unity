@@ -287,7 +287,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -319,8 +319,8 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ I met a girl dressed in red who was walking through the forest. She
-        was delicious.
+    - shortText: $ I met a girl dressed in red who was walking through the forest.
+        She was delicious.
       next: 13
       editor: 0
       is_plot_point: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -467,8 +467,8 @@ MonoBehaviour:
       and stronger!
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ I will never give up. I will become strong and maybe even lead my
-        own pack in the future.
+    - shortText: $ I will never give up. I will become strong and maybe even lead
+        my own pack in the future.
       next: 17
       editor: 0
       is_plot_point: 1
@@ -488,7 +488,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -502,22 +502,22 @@ MonoBehaviour:
     longText: Why is that? Don't you get along with the other wolves?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ No, I don't. And it's their fault. If they don't want me, they can
-        stay without me. Their loss!
+    - shortText: $ No, I don't. And it's their fault. If they don't want me, they
+        can stay without me. Their loss!
       next: 19
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 0
-    - shortText: $ I don't get along with these ones. But that's no reason to give up.
-        I'll keep looking for a pack where I will fit in.
+    - shortText: $ I don't get along with these ones. But that's no reason to give
+        up. I'll keep looking for a pack where I will fit in.
       next: 17
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: $ I'm too different. I think I prefer to stay alone. After all, I like
-        it fine as it is.
+    - shortText: $ I'm too different. I think I prefer to stay alone. After all, I
+        like it fine as it is.
       next: 8
       editor: 0
       is_plot_point: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -545,8 +545,8 @@ MonoBehaviour:
     longText: Why don't you like the others, Wolfy?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ They are too below me. I don't want to run with weaklings. They know
-        this and don't like me either.
+    - shortText: $ They are too below me. I don't want to run with weaklings. They
+        know this and don't like me either.
       next: 16
       editor: 0
       is_plot_point: 1
@@ -566,7 +566,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -601,7 +601,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -636,7 +636,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -657,14 +657,15 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ I'm scouting for prey, the rest of the pack are waiting for my signal.
+    - shortText: $ I'm scouting for prey, the rest of the pack are waiting for my
+        signal.
       next: 11
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ I am relaxing. The rest of the pack is working. They'll be here in
-        a while.
+    - shortText: $ I am relaxing. The rest of the pack is working. They'll be here
+        in a while.
       next: 12
       editor: 0
       is_plot_point: 0
@@ -678,7 +679,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -692,7 +693,8 @@ MonoBehaviour:
     longText: Are you happy with this role in the pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ No. I will be better alone. I don't need to follow the rest of them.
+    - shortText: $ No. I will be better alone. I don't need to follow the rest of
+        them.
       next: 20
       editor: 0
       is_plot_point: 1
@@ -719,7 +721,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -745,8 +747,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Lonely
       good_ending: 1
-    - shortText: $ No. I'd like to have a bigger, stronger pack.  But really it's only
-        a matter of time with me as their glorious leader.
+    - shortText: $ No. I'd like to have a bigger, stronger pack.  But really it's
+        only a matter of time with me as their glorious leader.
       next: 21
       editor: 0
       is_plot_point: 1
@@ -766,7 +768,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -801,7 +803,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -841,7 +843,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -881,7 +883,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -922,7 +924,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -963,7 +965,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1004,7 +1006,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1044,7 +1046,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1084,7 +1086,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1124,7 +1126,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1164,7 +1166,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1428,7 +1430,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1468,7 +1470,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1508,7 +1510,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1549,7 +1551,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -1590,7 +1592,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1619,7 +1621,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1639,8 +1641,8 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ Well, Teddy made us a bunch of cookies. We had a cookie-eating competition
-        and I won.
+    - shortText: $ Well, Teddy made us a bunch of cookies. We had a cookie-eating
+        competition and I won.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -1661,7 +1663,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1697,7 +1699,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1732,7 +1734,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1746,8 +1748,8 @@ MonoBehaviour:
     longText: That is awful, Mister Monkey. We should get you some help.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ Nobody can help me. Anyway I'm used to it now. There's no need to
-        make a fuss.
+    - shortText: $ Nobody can help me. Anyway I'm used to it now. There's no need
+        to make a fuss.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -1768,7 +1770,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1796,7 +1798,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1810,8 +1812,8 @@ MonoBehaviour:
     longText: An Accident? What happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ It's OK. It was a mistake and they promised it was never going to
-        happen again.
+    - shortText: $ It's OK. It was a mistake and they promised it was never going
+        to happen again.
       next: 5
       editor: 0
       is_plot_point: 0
@@ -1824,8 +1826,8 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ Well someone hurt me, but I think it was an accident. I'm sure they
-        didn't really mean to.
+    - shortText: $ Well someone hurt me, but I think it was an accident. I'm sure
+        they didn't really mean to.
       next: 12
       editor: 0
       is_plot_point: 0
@@ -1845,7 +1847,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1865,8 +1867,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: $ Someone saw the accident happen and they told teacher. I think it
-        will be better now...
+    - shortText: $ Someone saw the accident happen and they told teacher. I think
+        it will be better now...
       next: 22
       editor: 0
       is_plot_point: 1
@@ -1880,7 +1882,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1915,7 +1917,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1951,7 +1953,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -1991,7 +1993,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2025,7 +2027,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2046,8 +2048,8 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: $ Teacher would only make things worse. If teacher knows, it will just
-        make him angry. He hurts me when he's angry.
+    - shortText: $ Teacher would only make things worse. If teacher knows, it will
+        just make him angry. He hurts me when he's angry.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -2061,7 +2063,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2089,7 +2091,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2111,7 +2113,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2133,7 +2135,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2155,7 +2157,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2177,7 +2179,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2199,7 +2201,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2221,7 +2223,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 1
@@ -2872,7 +2874,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -2915,7 +2917,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -2953,7 +2955,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -2990,7 +2992,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3013,10 +3015,10 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ ' The cargo isn''t to blame for the engines'' problems, but if both
-        engines pull in opposing directions no one will ever go anywhere. We can go
-        our separate ways and arrange for the cargo to be taken care of between us.
-        Depending on where the cargo needs to be.'
+    - shortText: $ ' The cargo isn''t to blame for the engines'' problems, but if
+        both engines pull in opposing directions no one will ever go anywhere. We
+        can go our separate ways and arrange for the cargo to be taken care of between
+        us. Depending on where the cargo needs to be.'
       next: 10
       editor: 0
       is_plot_point: 1
@@ -3044,7 +3046,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3058,8 +3060,8 @@ MonoBehaviour:
     longText: You really think would be possible, Train?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ I think so, but the cargo should probably help me. With cargo's help
-        we could persuade the other engine to go in the right direction.
+    - shortText: $ I think so, but the cargo should probably help me. With cargo's
+        help we could persuade the other engine to go in the right direction.
       next: 13
       editor: 0
       is_plot_point: 1
@@ -3080,7 +3082,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3100,9 +3102,9 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ Teams don't always need agree on everything. The cargo doesn't need
-        both engines all the time. We can each drive the cargo around where it needs
-        to be. It would still be a team, maybe even a family.
+    - shortText: $ Teams don't always need agree on everything. The cargo doesn't
+        need both engines all the time. We can each drive the cargo around where it
+        needs to be. It would still be a team, maybe even a family.
       next: 15
       editor: 0
       is_plot_point: 1
@@ -3116,7 +3118,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3136,9 +3138,9 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: $ Teams don't always need agree on everything. The cargo doesn't need
-        both engines all the time. We can each drive the cargo around where it needs
-        to be. It would still be a team, maybe even a family.
+    - shortText: $ Teams don't always need agree on everything. The cargo doesn't
+        need both engines all the time. We can each drive the cargo around where it
+        needs to be. It would still be a team, maybe even a family.
       next: 1
       editor: 0
       is_plot_point: 1
@@ -3152,7 +3154,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3167,8 +3169,8 @@ MonoBehaviour:
       then?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: $ That's because the other engine is trying to oppose what's good for
-        me, and what's good for the cargo. It's a selfish engine. Bah!
+    - shortText: $ That's because the other engine is trying to oppose what's good
+        for me, and what's good for the cargo. It's a selfish engine. Bah!
       next: 3
       editor: 0
       is_plot_point: 0
@@ -3190,7 +3192,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3224,7 +3226,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3258,7 +3260,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3292,7 +3294,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3326,7 +3328,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3360,7 +3362,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3395,7 +3397,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
@@ -3429,7 +3431,7 @@ MonoBehaviour:
     passwords: []
     incorrect: 0
     exit:
-      shortText: $ 
+      shortText: $
       next: 0
       editor: 0
       is_plot_point: 0
