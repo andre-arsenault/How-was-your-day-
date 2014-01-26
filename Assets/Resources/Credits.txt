@@ -1,0 +1,56 @@
+
+How Was Your Day?
+
+Developed and submitted for the 2014
+Global Game Jam in Malta
+
+globalgamejam.org/2014/games/how-was-your-day
+
+
+
+WRITING BY
+
+Adrian Abela
+Jasper Schellekens
+
+
+ART BY
+
+Philippe Neguembor
+Jasper Schellekens
+
+
+PROGRAMMING BY
+
+Justin Cachia
+Stelios Avramidis
+
+
+PRODUCTION BY
+
+André Arsenault
+
+
+
+
+The following were used to make this game:
+
+
+DIALOGUE SYSTEM
+
+Unity3D Dialogue Generator by Royce Kimmons
+Licensed under Creative Commons: By Attribution 3.0
+Modified by the team to integrate game-specific
+state changes and to build for iOS
+royce.kimmons.me/tools/unity3d_dialogue_generator
+
+
+MUSIC
+
+Gone Beyond by Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0
+incompetech.com/music/royalty-free/index.html?isrc=USUAN1100752
+
+
+
+
