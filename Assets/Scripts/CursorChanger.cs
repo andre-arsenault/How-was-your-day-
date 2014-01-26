@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class CursorChanger : MonoBehaviour
 {
-    public Texture2D cursorTexture;
+    public Texture2D cursorTexture, cursorSelectionTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 cursorHotSpot = Vector2.zero;
     public float scaleIncrease = 0.5f;
@@ -22,6 +23,12 @@ public class CursorChanger : MonoBehaviour
         isActive = false;
 
         originalSize = transform.localScale;
+
+        /*
+         * The setting of the initial cursor is being set as a Co-Routine as a 'hack'
+         * to get the mouse to actually change its cursor.
+         */
+        StartCoroutine(SetInitialCursor());
     }
 
     void Update()
@@ -39,19 +46,35 @@ public class CursorChanger : MonoBehaviour
     {
         if (this.enabled)
         {
-            Cursor.SetCursor(cursorTexture, cursorHotSpot, cursorMode);
+            Cursor.SetCursor(cursorSelectionTexture, cursorHotSpot, cursorMode);
             isActive = true;
         }
     }
 
     void OnMouseExit()
     {
-        ResetMouse();
-        isActive = false;
+        if (this.enabled)
+        {
+            Cursor.SetCursor(cursorTexture, cursorHotSpot, cursorMode);
+            isActive = false;
+        }
     }
+
+
 
     public void ResetMouse()
     {
+        isActive = false;
         Cursor.SetCursor(null, cursorHotSpot, cursorMode);
+    }
+
+    /// <summary>
+    /// This is only meant to be called as a Co-Routine the first time the application
+    /// is run.
+    /// </summary>
+    private IEnumerator SetInitialCursor()
+    {
+        yield return null;
+        OnMouseExit();
     }
 }

@@ -18,7 +18,7 @@ public class ToyController : MonoBehaviour
     public String aspect;
     public int score;
 
-    public AudioClip audio;
+    public AudioClip clickAudio;
     public float maxRotationAngle = 0.03f;
 
     public Sprite[] Backgrounds
@@ -53,9 +53,14 @@ public class ToyController : MonoBehaviour
     void OnMouseDown()
     {
         // Hide the selected toy, and reset the counter
-        GetComponent<SpriteRenderer>().enabled = false;
-        GetComponent<CursorChanger>().ResetMouse();
-        GetComponent<CursorChanger>().enabled = false;
+        GameObject[] toys = GameObject.FindGameObjectsWithTag("Toys");
+
+        foreach (GameObject toy in toys)
+        {
+            toy.GetComponent<CursorChanger>().enabled = false;
+            toy.GetComponent<CursorChanger>().ResetMouse();
+            toy.GetComponent<SpriteRenderer>().enabled = false;
+        }
 
         // Set the focused toy
         focusedToy.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
@@ -93,8 +98,8 @@ public class ToyController : MonoBehaviour
 
     public void OnDialogueChosen()
     {
-        if (audio != null)
-            focusedToy.GetComponent<AudioSource>().PlayOneShot(audio);
+        if (clickAudio != null)
+            focusedToy.GetComponent<AudioSource>().PlayOneShot(clickAudio);
 
         rotationAngle = Mathf.Max(-((float)rotationRandomizer.NextDouble() / 10f), -maxRotationAngle);
         rotate = true;
