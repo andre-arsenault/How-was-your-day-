@@ -257,7 +257,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I looked at the moon, and it was so beautiful I couldn't stop howling
+    - shortText: I looked at the moon, and it was so beautiful I couldn't stop howling.
       next: 2
       editor: 0
       is_plot_point: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
     longText: Why is that, Wolf? Why don't you have a pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: 'The pack doesn''t like me. They do not want me running with them.'
+    - shortText: The pack doesn't like me. They do not want me running with them.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -495,14 +495,14 @@ MonoBehaviour:
     longText: Why don't you like the others, Wolfy?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: 'They are too below me. I don''t want to run with weaklings. They
-        know this and don''t like me either.'
+    - shortText: They are too below me. I don't want to run with weaklings. They know
+        this and don't like me either.
       next: 16
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 0
-    - shortText: 'I just never found a pack that I wanted to join.'
+    - shortText: I just never found a pack that I wanted to join.
       next: 6
       editor: 0
       is_plot_point: 0
@@ -530,8 +530,8 @@ MonoBehaviour:
     longText: Why do you prefer to be alone Wolfy?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: 'The other wolves plan bad things against me behind my back. I don''t
-        want to stay with them.'
+    - shortText: The other wolves plan bad things against me behind my back. I don't
+        want to stay with them.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -777,7 +777,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: 'This cuteness is just a facade! I''m really a wild beast!'
+    - shortText: This cuteness is just a facade! I'm really a wild beast!
       next: 15
       editor: 0
       is_plot_point: 0
@@ -1451,8 +1451,8 @@ MonoBehaviour:
     longText: Come on Mister Monkey, tell me what happened.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I don't want to talk about it! Teddy asked about it and got what
-        he deserved. Stop asking."
+    - shortText: I don't want to talk about it! Teddy asked about it and got what
+        he deserved. Stop asking.
       next: 20
       editor: 0
       is_plot_point: 1
@@ -1563,8 +1563,8 @@ MonoBehaviour:
     longText: Oh no! And then he hurt you? Poor Monkey! Let me help you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I don't want your help. My arm is fine, there's nothing to worry
-        about."
+    - shortText: I don't want your help. My arm is fine, there's nothing to worry
+        about.
       next: 21
       editor: 0
       is_plot_point: 1
@@ -1599,7 +1599,7 @@ MonoBehaviour:
     longText: What do you mean? Does this happen a lot, Mister Monkey?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I deserve it. I'm a bad monkey."
+    - shortText: I deserve it. I'm a bad monkey.
       next: 23
       editor: 0
       is_plot_point: 1
@@ -1634,8 +1634,8 @@ MonoBehaviour:
     longText: That is awful, Mister Monkey. We should get you some help.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "Nobody can help me. Anyway I'm used to it now. There's no need to
-        make a fuss."
+    - shortText: Nobody can help me. Anyway I'm used to it now. There's no need to
+        make a fuss.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -1670,7 +1670,7 @@ MonoBehaviour:
     longText: Oh Mister Monkey! You should be more careful next time. What happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "It was an accident."
+    - shortText: It was an accident.
       next: 11
       editor: 0
       is_plot_point: 0
@@ -1719,7 +1719,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: "It was my fault. I was being a bad monkey."
+    - shortText: It was my fault. I was being a bad monkey.
       next: 13
       editor: 0
       is_plot_point: 0
@@ -1747,7 +1747,7 @@ MonoBehaviour:
     longText: Someone hurt you on purpose? Poor Mister Monkey! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "Nobody saw anything. There's nothing to do."
+    - shortText: Nobody saw anything. There's nothing to do.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -1817,8 +1817,8 @@ MonoBehaviour:
     longText: Disobeying! Oh monkey, you know that makes him angry! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I did something bad. I deserved it. He told me that many many times.
-        So I should be better. Maybe next time I won't deserve it."
+    - shortText: I did something bad. I deserved it. He told me that many many times.
+        So I should be better. Maybe next time I won't deserve it.
       next: 23
       editor: 0
       is_plot_point: 1
@@ -1865,7 +1865,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: 'Yes.'
+    - shortText: Yes.
       next: 18
       editor: 0
       is_plot_point: 0
@@ -1927,8 +1927,8 @@ MonoBehaviour:
     longText: Why didn't you tell teacher? Teacher would have helped you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I don't want Teacher to know. He takes care of me and I don't want
-        to make him look like a bad person."
+    - shortText: I don't want Teacher to know. He takes care of me and I don't want
+        to make him look like a bad person.
       next: 22
       editor: 0
       is_plot_point: 1
@@ -2763,8 +2763,8 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 2
-    longText: 'Train, isn''t it difficult to drive with two steam engines pulling
-      in different directions?'
+    longText: Train, isn't it difficult to drive with two steam engines pulling in
+      different directions?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: We aren't always pulling in different directions. We can help each
@@ -3011,9 +3011,9 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: 'The other engine and I, we have different views. But we can take
-        turns pulling and we can end up in unexpected and wonderful places. We''re
-        a team of explorers.'
+    - shortText: The other engine and I, we have different views. But we can take
+        turns pulling and we can end up in unexpected and wonderful places. We're
+        a team of explorers.
       next: 6
       editor: 0
       is_plot_point: 0
