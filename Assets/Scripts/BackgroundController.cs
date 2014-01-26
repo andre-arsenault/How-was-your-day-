@@ -38,4 +38,18 @@ public class BackgroundController : MonoBehaviour
     {
         backgrounds = Resources.LoadAll<Sprite>("Sprites/Backgrounds");
     }
+
+
+
+    public void ReactivateHiddenToys()
+    {
+        GameObject[] toys = GameObject.FindGameObjectsWithTag("Toys").Where(t => string.IsNullOrEmpty(t.GetComponent<ToyController>().aspect)).ToArray();
+
+        foreach (GameObject toy in toys)
+        {
+            toy.GetComponent<CursorChanger>().enabled = true;
+            toy.GetComponent<SpriteRenderer>().enabled = true;
+            toy.GetComponent<CursorChanger>().SetMouse();
+        }
+    }
 }
