@@ -33,7 +33,7 @@ public class BackGroundSwitch : MonoBehaviour
     SpriteRenderer back_ground_message;
     SpriteRenderer back_ground_finale;
     SpriteRenderer back_ground_credits;
-	SpriteRenderer back_ground_credits2;
+    SpriteRenderer back_ground_credits2;
 
     float fadespeed = 2f;
     Color temp_color;
@@ -67,7 +67,7 @@ public class BackGroundSwitch : MonoBehaviour
     public float delay_black_for_message = 2f;
     public float keep_message = 5f;
     public float keep_finale = 6f;
-	public bool show_credits_second = true;
+    public bool show_credits_second = true;
 
     void Awake()
     {
@@ -81,8 +81,8 @@ public class BackGroundSwitch : MonoBehaviour
         back_ground_message = GameObject.Find("ToysBackground_message").GetComponent<SpriteRenderer>();
         back_ground_finale = GameObject.Find("ToysBackground_finale").GetComponent<SpriteRenderer>();
         back_ground_credits = GameObject.Find("ToysBackground_credits").GetComponent<SpriteRenderer>();
-		back_ground_credits2 = GameObject.Find("ToysBackground_credits2").GetComponent<SpriteRenderer>();
-		
+        back_ground_credits2 = GameObject.Find("ToysBackground_credits2").GetComponent<SpriteRenderer>();
+
         //Set all the other backGrounds to be transparent
         temp_color = back_ground_blur.color;
         temp_color.a = 0;
@@ -92,9 +92,10 @@ public class BackGroundSwitch : MonoBehaviour
         back_ground_message.color = temp_color;
         back_ground_finale.color = temp_color;
         back_ground_credits.color = temp_color;
-		back_ground_credits2.color = temp_color;
+        back_ground_credits2.color = temp_color;
 
     }
+
     // Use this for initialization
     void Start()
     {
@@ -118,7 +119,6 @@ public class BackGroundSwitch : MonoBehaviour
 
         if (exit_dialogue)
         {
-
             /* The CameraController.cs script can be a little tricky. It detects whether the camera is off position
              * and slowly brings it back. We zoom the camera in and then we deactivate the screen because 
              * firstly we want the background to change from Blur -> Ending and then we reactivate it (so that the zoom out may commence). 
@@ -154,7 +154,6 @@ public class BackGroundSwitch : MonoBehaviour
                     end = true;
                     exit_dialogue = false;
                 }
-
             }
         }
 
@@ -164,19 +163,14 @@ public class BackGroundSwitch : MonoBehaviour
          */
         if (end)
         {
-
             if (!finale)
             {
                 StartCoroutine("Start_Ending");
                 if (back_ground_black.color.a == 1)
                 {
-
                     StartCoroutine("End_Ending");
                     if (back_ground_norm.color.a == 1)
                     {
-
-
-
                         //Reset everything
                         end = false;
                         wait = true;
@@ -189,7 +183,6 @@ public class BackGroundSwitch : MonoBehaviour
                         back_ground_blur.color = temp_color;
                         back_ground_end.color = temp_color;
                         back_ground_black.color = temp_color;
-
                     }
                 }
             }
@@ -205,34 +198,21 @@ public class BackGroundSwitch : MonoBehaviour
                 {
                     stop_coroutine = true;
                     StartCoroutine("Keep_Message");
-
                 }
 
                 if (back_ground_finale.color.a == 1)
                 {
-                   
                     //end = false;
-
                     StartCoroutine("ShowCredits");
-
-
                 }
-
-
             }
-
-
-
         }
-
     }
-
 
 
 
     void FadeIn(SpriteRenderer fadein_sprite)
     {
-
         temp_color = fadein_sprite.color;
         temp_color.a = Mathf.Lerp(temp_color.a, 1, Time.deltaTime * fadespeed);
 
@@ -242,14 +222,11 @@ public class BackGroundSwitch : MonoBehaviour
         {
             temp_color.a = 1;
             fadein_sprite.color = temp_color;
-
         }
-
     }
 
     void FadeOut(SpriteRenderer fadeout_sprite)
     {
-
         temp_color = fadeout_sprite.color;
         temp_color.a = Mathf.Lerp(temp_color.a, 0, Time.deltaTime * fadespeed);
 
@@ -260,7 +237,6 @@ public class BackGroundSwitch : MonoBehaviour
 
             temp_color.a = 0;
             fadeout_sprite.color = temp_color;
-
         }
     }
 
@@ -275,31 +251,27 @@ public class BackGroundSwitch : MonoBehaviour
         FadeOut(back_ground_end);
 
         yield return null;
-
     }
 
     IEnumerator End_Ending()
     {
         if (wait_again)
         {
-
             yield return new WaitForSeconds(delay_black);
             wait_again = false;
         }
 
-        if (back_ground_norm.color.a > 0.5)
+        if (back_ground_norm.color.a > 0.5f)
             GameObject.Find("ToysBackground").GetComponent<BackgroundController>().ReactivateHiddenToys();
 
         FadeOut(back_ground_black);
         FadeIn(back_ground_norm);
 
         yield return null;
-
     }
 
     IEnumerator End_Ending_for_message()
     {
-
         if (!stop_coroutine)
         {
             if (message_wait)
@@ -308,17 +280,11 @@ public class BackGroundSwitch : MonoBehaviour
                 message_wait = false;
             }
 
-
-         
             FadeOut(back_ground_end);
             FadeIn(back_ground_message);
-
-
         }
 
-
         yield return null;
-
     }
 
     IEnumerator Keep_Message()
@@ -328,7 +294,7 @@ public class BackGroundSwitch : MonoBehaviour
             yield return new WaitForSeconds(keep_message);
             message_first_time = false;
         }
-       
+
         /*
         if ( back_ground_finale.color.a == 1 ) {
             yield return null;
@@ -344,51 +310,47 @@ public class BackGroundSwitch : MonoBehaviour
 
     IEnumerator ShowCredits()
     {
-
-        
         if (show_credits_first)
         {
             yield return new WaitForSeconds(keep_finale);
             show_credits_first = false;
-			gameObject.audio.Stop();
+            gameObject.audio.Stop();
         }
 
-		
+
         FadeOut(back_ground_finale);
         FadeIn(back_ground_credits);
-		
 
-		if (back_ground_credits.color.a == 1 ){
 
-			StartCoroutine("ShowCredits2");
-		}
+        if (back_ground_credits.color.a == 1)
+        {
 
-		yield return null;
+            StartCoroutine("ShowCredits2");
+        }
+
+        yield return null;
 
     }
 
-	IEnumerator ShowCredits2()
-	{
+    IEnumerator ShowCredits2()
+    {
+        if (show_credits_second)
+        {
+            yield return new WaitForSeconds(4);
+            show_credits_second = false;
+        }
 
-		if (show_credits_second)
-		{
-			yield return new WaitForSeconds(4);
-			show_credits_second = false;
-		}
+        FadeOut(back_ground_credits);
+        FadeIn(back_ground_credits2);
 
-		FadeOut(back_ground_credits);
-		FadeIn(back_ground_credits2);
+        if (back_ground_credits2.color.a == 1)
+        {
+            yield return new WaitForSeconds(4);
+            Application.LoadLevel("MenuScene");
 
-		if ( back_ground_credits2.color.a == 1 ) {
-			yield return new WaitForSeconds(4);
-			Application.LoadLevel("MenuScene");
-			
-		}
+        }
 
-		yield return null;
-		
-	}
-	
-	
-	
+        yield return null;
+
+    }
 }

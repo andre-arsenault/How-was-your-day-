@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.Linq;
 
 public class ToyController : MonoBehaviour
 {
@@ -53,7 +54,7 @@ public class ToyController : MonoBehaviour
     void OnMouseDown()
     {
         // Hide the selected toy, and reset the counter
-        GameObject[] toys = GameObject.FindGameObjectsWithTag("Toys");
+        GameObject[] toys = GameObject.FindGameObjectsWithTag("Toys").Where(t => string.IsNullOrEmpty(t.GetComponent<ToyController>().aspect)).ToArray();
 
         foreach (GameObject toy in toys)
         {
@@ -66,6 +67,7 @@ public class ToyController : MonoBehaviour
             if (shadow != null)
                 shadow.GetComponent<SpriteRenderer>().enabled = false;
         }
+
 
         // Set the focused toy
         focusedToy.GetComponent<SpriteRenderer>().sprite = backgrounds[0];

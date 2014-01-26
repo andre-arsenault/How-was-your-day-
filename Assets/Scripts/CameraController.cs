@@ -15,8 +15,6 @@ public class CameraController : MonoBehaviour
 
         while (camera.WorldToViewportPoint(background.renderer.bounds.extents).x >= 1f && stepOutCount < 10)
         {
-            Debug.Log(camera.WorldToViewportPoint(background.renderer.bounds.extents).ToString());
-
             camera.orthographicSize += 0.5f;
             zoomOutSpeed += 0.15f;
             stepOutCount++;
