@@ -535,7 +535,7 @@ MonoBehaviour:
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: 'The other wolves plan bad things against me behind my back. I don''t
-        want to stay with them
+        want to stay with them.
 
 '
       next: 19
@@ -777,7 +777,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Why... thank you
+    - shortText: Why... thank you.
       next: 2
       editor: 0
       is_plot_point: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
     script: 
   - name: 16 TERM_MEAN_WOLF
     longText: With that kind of behavior, it's no wonder that the others can't stand
-      you
+      you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: No actually, it's not a facade. I really am just this cute.
@@ -971,7 +971,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 19 TERM_STAY_WITHOUT_EACHOTHER
-    longText: They're going to stay without you, and you without them
+    longText: They're going to stay without you, and you without them.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: No actually, it's not a facade. I really am just this cute.
@@ -1051,7 +1051,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 21 TERM_GET_STRONGER
-    longText: That's what I want to hear. Work hard and become stronger
+    longText: That's what I want to hear. Work hard and become stronger.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: No actually, it's not a facade. I really am just this cute.
@@ -1091,7 +1091,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 22 TERM_CONTENT
-    longText: I'm happy that you're happy
+    longText: I'm happy that you're happy.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: No actually, it's not a facade. I really am just this cute.
@@ -1296,19 +1296,19 @@ MonoBehaviour:
     longText: Hello Monkey! How was your day?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: The day was fine
+    - shortText: The day was fine.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Fine
+    - shortText: Fine.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: It was bananas
+    - shortText: It was bananas!
       next: 1
       editor: 0
       is_plot_point: 0
@@ -1348,7 +1348,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Went on a wild adventure
+    - shortText: Went on a wild adventure.
       next: 2
       editor: 0
       is_plot_point: 0
@@ -1373,10 +1373,10 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 2
-    longText: Monkey, what is wrong with your arm? It looks like you're hurt
+    longText: Monkey, what is wrong with your arm? It looks like you're hurt.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's nothing. I'm fine
+    - shortText: It's nothing. I'm fine.
       next: 3
       editor: 0
       is_plot_point: 0
@@ -1388,7 +1388,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Another Toy hurt me
+    - shortText: Another Toy hurt me.
       next: 15
       editor: 0
       is_plot_point: 0
@@ -1464,13 +1464,13 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: I don't want to talk about it. Leave me alone
+    - shortText: I don't want to talk about it. Leave me alone.
       next: 21
       editor: 0
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: There isn't much to tell. Don't worry about it
+    - shortText: There isn't much to tell. Don't worry about it.
       next: 5
       editor: 0
       is_plot_point: 1
@@ -1533,7 +1533,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Well, Teddy made us a bunch of cookies. We ha a cookie-eating competition
+    - shortText: Well, Teddy made us a bunch of cookies. We had a cookie-eating competition
         and I won.
       next: 19
       editor: 0
@@ -1820,8 +1820,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 14
-    longText: Disobeying! Oh monkey, you know that makes him angry! What did you do
-      ?
+    longText: Disobeying! Oh monkey, you know that makes him angry! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: "I did something bad. I deserved it. He told me that many many times.
@@ -1902,7 +1901,7 @@ MonoBehaviour:
     longText: Why not Mister Monkey? Why wouldn't it matter?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It's my fault.. Teacher shouldn't need to know.
+    - shortText: It's my fault...Teacher shouldn't need to know.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -1943,7 +1942,7 @@ MonoBehaviour:
       is_plot_point: 1
       aspect: Domestic
       good_ending: 0
-    - shortText: Teacher would only make things worse. If teacher knows it will just
+    - shortText: Teacher would only make things worse. If teacher knows, it will just
         make him angry. He hurts me when he's angry.
       next: 24
       editor: 0
@@ -1969,7 +1968,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 18
-    longText: That's a good monkey. What did teacher do ?
+    longText: That's a good monkey. What did teacher do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: She said, "Little monkeys shouldn't be hurt," and helped me.
@@ -1997,7 +1996,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 19 TERMINATION
-    longText: You put Monkey down and go to bed
+    longText: Goodnight Monkey. It's time for bed.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices: []
     choiceMode: 0
@@ -2624,19 +2623,19 @@ MonoBehaviour:
     longText: Hello Train! How was your day?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: It was OK I guess
+    - shortText: It was OK I guess.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Fine
+    - shortText: Fine.
       next: 1
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: I'm quite chuffed today
+    - shortText: I'm quite chuffed today.
       next: 1
       editor: 0
       is_plot_point: 0
@@ -2667,7 +2666,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 1
-    longText: What did you do today Train?
+    longText: What did you do today, Train?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: I explored the southern route of the room. There was still Halloween
@@ -2753,14 +2752,14 @@ MonoBehaviour:
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: 'Because there is only one thing in the engines'' life that matters
-        above all others: the cargo. And both of us think we know what is the best
-        place for the cargo.'
+        above all others: the cargo. And both of us think we know what''s best for
+        the cargo.'
       next: 4
       editor: 0
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: Because other engine and I want different things.
+    - shortText: Because the other engine and I want different things.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -3021,7 +3020,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 10 TERM_APART_POSITIVE
-    longText: At least this way cargo will have both of you
+    longText: At least this way cargo will have both of you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
@@ -3055,7 +3054,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 11 TERM_LOSE_LOSE
-    longText: If you're going to be like that, none of you are going to have the cargo
+    longText: If you're going to be like that, none of you are going to have the cargo.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
@@ -3089,7 +3088,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 12 TERM_CARGO_SUFFERS
-    longText: The cargo is going to be the one who suffers in the end
+    longText: The cargo is going to be the one who suffers in the end.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
@@ -3123,7 +3122,7 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 13 TERM_CARGO_MANIPULATED
-    longText: I'm sure cargo will be more than happy to help with the issue
+    longText: I'm sure cargo will be more than happy to help with the issue.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
@@ -3158,7 +3157,7 @@ MonoBehaviour:
     script: 
   - name: 14 TERM_EVERYONE_HAPPY
     longText: If you can get this all to work, I think you're all going to be much
-      happier
+      happier.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: Well, if Bunny is lucky it will be taken by one of the engines.
