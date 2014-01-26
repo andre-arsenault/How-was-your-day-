@@ -117,7 +117,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 12800000, guid: b1241d916736f1541b84101f4db3c893, type: 3}
+    m_Font: {fileID: 12800000, guid: 91e0ef90b559c42f98b6c395aee29b0c, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 3
@@ -1992,8 +1992,8 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 12800000, guid: 879cf35e8a36b41dabb1f3cba0300383, type: 3}
-    m_FontSize: 0
+    m_Font: {fileID: 12800000, guid: 91e0ef90b559c42f98b6c395aee29b0c, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_Alignment: 0
     m_WordWrap: 1
