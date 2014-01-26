@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Linq;
+﻿using System.Linq;
+using UnityEngine;
 
 public class BackgroundController : MonoBehaviour
 {
@@ -50,6 +50,7 @@ public class BackgroundController : MonoBehaviour
         {
             toy.GetComponent<CursorChanger>().enabled = true;
             toy.GetComponent<SpriteRenderer>().enabled = true;
+            toy.GetComponent<BoxCollider2D>().enabled = true;
             toy.GetComponent<CursorChanger>().SetMouse();
         }
     }

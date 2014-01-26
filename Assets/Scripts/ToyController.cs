@@ -60,6 +60,7 @@ public class ToyController : MonoBehaviour
             toy.GetComponent<CursorChanger>().enabled = false;
             toy.GetComponent<CursorChanger>().ResetMouse();
             toy.GetComponent<SpriteRenderer>().enabled = false;
+            toy.GetComponent<BoxCollider2D>().enabled = false;
         }
 
         // Set the focused toy
