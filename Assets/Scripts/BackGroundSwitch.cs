@@ -43,10 +43,12 @@ public class BackGroundSwitch : MonoBehaviour {
 
 	public bool end;
 	public bool wait = true;
+	public bool wait_again = true;
 
 	bool zoom_out = false;
 	float time;
-	public float delay = 3f;
+	public float delay_end = 3f;
+	public float delay_black = 5f; 
 
 	void Awake () {
 
@@ -129,8 +131,7 @@ public class BackGroundSwitch : MonoBehaviour {
 
 			StartCoroutine("Start_Ending");
 			if ( back_ground_black.color.a == 1 ) {
-				FadeOut(back_ground_black);
-				FadeIn(back_ground_norm);
+				StartCoroutine("End_Ending");
 				if ( back_ground_norm.color.a == 1 ) {
 					//Reset everything
 					end = false;
@@ -188,7 +189,7 @@ public class BackGroundSwitch : MonoBehaviour {
 
 	IEnumerator Start_Ending(){
 		if ( wait) {
-			yield return new WaitForSeconds(delay);
+			yield return new WaitForSeconds(delay_end);
 			wait = false;
 		}
 		FadeIn(back_ground_black);
@@ -197,6 +198,19 @@ public class BackGroundSwitch : MonoBehaviour {
 		yield return null;
 		
 	}
+
+	IEnumerator End_Ending(){
+		if ( wait_again ) {
+			yield return new WaitForSeconds(delay_black);
+			wait_again = false;
+		}
+		FadeOut(back_ground_black);
+		FadeIn(back_ground_norm);
+		
+		yield return null;
+		
+	}
+
 	
 	
 }
