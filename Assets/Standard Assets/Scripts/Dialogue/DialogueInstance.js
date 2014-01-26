@@ -324,7 +324,7 @@ function ShowList () {
 		  a bad ending and which aspect of the story this choice is about
 		  */
 	
-		if (GUILayout.Button(c.shortText,GUILayout.Height(30))){
+		if (GUILayout.Button(c.shortText/*,GUILayout.Height(30)*/)){
 		
 				// Since a choice has been made, send a signal to the toy to do someone (wiggle anim, etc)
 				this.gameObject.SendMessage("OnDialogueChosen");
