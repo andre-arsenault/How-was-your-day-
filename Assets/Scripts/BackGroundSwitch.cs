@@ -33,6 +33,7 @@ public class BackGroundSwitch : MonoBehaviour
     SpriteRenderer back_ground_message;
     SpriteRenderer back_ground_finale;
     SpriteRenderer back_ground_credits;
+	SpriteRenderer back_ground_credits2;
 
     float fadespeed = 2f;
     Color temp_color;
@@ -66,6 +67,7 @@ public class BackGroundSwitch : MonoBehaviour
     public float delay_black_for_message = 2f;
     public float keep_message = 5f;
     public float keep_finale = 6f;
+	public bool show_credits_second = true;
 
     void Awake()
     {
@@ -79,7 +81,8 @@ public class BackGroundSwitch : MonoBehaviour
         back_ground_message = GameObject.Find("ToysBackground_message").GetComponent<SpriteRenderer>();
         back_ground_finale = GameObject.Find("ToysBackground_finale").GetComponent<SpriteRenderer>();
         back_ground_credits = GameObject.Find("ToysBackground_credits").GetComponent<SpriteRenderer>();
-
+		back_ground_credits2 = GameObject.Find("ToysBackground_credits2").GetComponent<SpriteRenderer>();
+		
         //Set all the other backGrounds to be transparent
         temp_color = back_ground_blur.color;
         temp_color.a = 0;
@@ -89,6 +92,7 @@ public class BackGroundSwitch : MonoBehaviour
         back_ground_message.color = temp_color;
         back_ground_finale.color = temp_color;
         back_ground_credits.color = temp_color;
+		back_ground_credits2.color = temp_color;
 
     }
     // Use this for initialization
@@ -100,7 +104,7 @@ public class BackGroundSwitch : MonoBehaviour
 
     void Update()
     {
-        //finale = GameObject.FindGameObjectsWithTag("Toys").All(t => !string.IsNullOrEmpty(t.GetComponent<ToyController>().aspect));
+        finale = GameObject.FindGameObjectsWithTag("Toys").All(t => !string.IsNullOrEmpty(t.GetComponent<ToyController>().aspect));
 
         //The simpler state we go from Normal -> Blur background. We also make the corresponding animal appear
         //We get the information about the focused animal from the ToyController.cs script.
@@ -203,13 +207,14 @@ public class BackGroundSwitch : MonoBehaviour
                     StartCoroutine("Keep_Message");
 
                 }
-                Debug.Log("IT IS" + back_ground_finale.color.a);
+
                 if (back_ground_finale.color.a == 1)
                 {
-                    Debug.Log("lalala");
+                   
                     //end = false;
 
                     StartCoroutine("ShowCredits");
+
 
                 }
 
@@ -304,7 +309,7 @@ public class BackGroundSwitch : MonoBehaviour
             }
 
 
-            Debug.Log("Got into message");
+         
             FadeOut(back_ground_end);
             FadeIn(back_ground_message);
 
@@ -323,7 +328,7 @@ public class BackGroundSwitch : MonoBehaviour
             yield return new WaitForSeconds(keep_message);
             message_first_time = false;
         }
-        Debug.Log("Mpiak sto keep");
+       
         /*
         if ( back_ground_finale.color.a == 1 ) {
             yield return null;
@@ -339,21 +344,51 @@ public class BackGroundSwitch : MonoBehaviour
 
     IEnumerator ShowCredits()
     {
-        Debug.Log("Show credits");
+
+        
         if (show_credits_first)
         {
             yield return new WaitForSeconds(keep_finale);
             show_credits_first = false;
+			gameObject.audio.Stop();
         }
 
-
+		
         FadeOut(back_ground_finale);
         FadeIn(back_ground_credits);
+		
 
-        yield return null;
+		if (back_ground_credits.color.a == 1 ){
+
+			StartCoroutine("ShowCredits2");
+		}
+
+		yield return null;
 
     }
 
+	IEnumerator ShowCredits2()
+	{
 
+		if (show_credits_second)
+		{
+			yield return new WaitForSeconds(4);
+			show_credits_second = false;
+		}
 
+		FadeOut(back_ground_credits);
+		FadeIn(back_ground_credits2);
+
+		if ( back_ground_credits2.color.a == 1 ) {
+			yield return new WaitForSeconds(4);
+			Application.LoadLevel("MenuScene");
+			
+		}
+
+		yield return null;
+		
+	}
+	
+	
+	
 }

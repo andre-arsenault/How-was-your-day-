@@ -333,7 +333,7 @@ MonoBehaviour:
     longText: Why is that, Wolf? Why don't you have a pack?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: 'The pack doesn''t like me. They do not want me running with them.'
+    - shortText: The pack doesn't like me. They do not want me running with them.
       next: 4
       editor: 0
       is_plot_point: 0
@@ -495,14 +495,14 @@ MonoBehaviour:
     longText: Why don't you like the others, Wolfy?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: 'They are too below me. I don''t want to run with weaklings. They
-        know this and don''t like me either.'
+    - shortText: They are too below me. I don't want to run with weaklings. They know
+        this and don't like me either.
       next: 16
       editor: 0
       is_plot_point: 1
       aspect: Lonely
       good_ending: 0
-    - shortText: 'I just never found a pack that I wanted to join.'
+    - shortText: I just never found a pack that I wanted to join.
       next: 6
       editor: 0
       is_plot_point: 0
@@ -530,8 +530,8 @@ MonoBehaviour:
     longText: Why do you prefer to be alone Wolfy?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: 'The other wolves plan bad things against me behind my back. I don''t
-        want to stay with them.'
+    - shortText: The other wolves plan bad things against me behind my back. I don't
+        want to stay with them.
       next: 19
       editor: 0
       is_plot_point: 1
@@ -777,7 +777,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: 'This cuteness is just a facade! I''m really a wild beast!'
+    - shortText: This cuteness is just a facade! I'm really a wild beast!
       next: 15
       editor: 0
       is_plot_point: 0
@@ -1187,6 +1187,68 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 8.28000069, y: 10.6000004}
   m_Center: {x: 0, y: 0}
+--- !u!1 &406980519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 406980522}
+  - 212: {fileID: 406980521}
+  - 114: {fileID: 406980520}
+  m_Layer: 0
+  m_Name: ToysBackground_credits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &406980520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406980519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d70a5be1374764dbadf0725c9bc1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &406980521
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406980519}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortingLayerID: 3965318387
+  m_Sprite: {fileID: 21300000, guid: e89c41f8e4627ae42b4c69e4ecfa8da5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &406980522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406980519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &553415520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,8 +1513,8 @@ MonoBehaviour:
     longText: Come on Mister Monkey, tell me what happened.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I don't want to talk about it! Teddy asked about it and got what
-        he deserved. Stop asking."
+    - shortText: I don't want to talk about it! Teddy asked about it and got what
+        he deserved. Stop asking.
       next: 20
       editor: 0
       is_plot_point: 1
@@ -1563,8 +1625,8 @@ MonoBehaviour:
     longText: Oh no! And then he hurt you? Poor Monkey! Let me help you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I don't want your help. My arm is fine, there's nothing to worry
-        about."
+    - shortText: I don't want your help. My arm is fine, there's nothing to worry
+        about.
       next: 21
       editor: 0
       is_plot_point: 1
@@ -1599,7 +1661,7 @@ MonoBehaviour:
     longText: What do you mean? Does this happen a lot, Mister Monkey?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I deserve it. I'm a bad monkey."
+    - shortText: I deserve it. I'm a bad monkey.
       next: 23
       editor: 0
       is_plot_point: 1
@@ -1634,8 +1696,8 @@ MonoBehaviour:
     longText: That is awful, Mister Monkey. We should get you some help.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "Nobody can help me. Anyway I'm used to it now. There's no need to
-        make a fuss."
+    - shortText: Nobody can help me. Anyway I'm used to it now. There's no need to
+        make a fuss.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -1670,7 +1732,7 @@ MonoBehaviour:
     longText: Oh Mister Monkey! You should be more careful next time. What happened?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "It was an accident."
+    - shortText: It was an accident.
       next: 11
       editor: 0
       is_plot_point: 0
@@ -1719,7 +1781,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: "It was my fault. I was being a bad monkey."
+    - shortText: It was my fault. I was being a bad monkey.
       next: 13
       editor: 0
       is_plot_point: 0
@@ -1747,7 +1809,7 @@ MonoBehaviour:
     longText: Someone hurt you on purpose? Poor Mister Monkey! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "Nobody saw anything. There's nothing to do."
+    - shortText: Nobody saw anything. There's nothing to do.
       next: 24
       editor: 0
       is_plot_point: 1
@@ -1817,8 +1879,8 @@ MonoBehaviour:
     longText: Disobeying! Oh monkey, you know that makes him angry! What did you do?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I did something bad. I deserved it. He told me that many many times.
-        So I should be better. Maybe next time I won't deserve it."
+    - shortText: I did something bad. I deserved it. He told me that many many times.
+        So I should be better. Maybe next time I won't deserve it.
       next: 23
       editor: 0
       is_plot_point: 1
@@ -1865,7 +1927,7 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: 'Yes.'
+    - shortText: Yes.
       next: 18
       editor: 0
       is_plot_point: 0
@@ -1927,8 +1989,8 @@ MonoBehaviour:
     longText: Why didn't you tell teacher? Teacher would have helped you.
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
-    - shortText: "I don't want Teacher to know. He takes care of me and I don't want
-        to make him look like a bad person."
+    - shortText: I don't want Teacher to know. He takes care of me and I don't want
+        to make him look like a bad person.
       next: 22
       editor: 0
       is_plot_point: 1
@@ -2489,6 +2551,7 @@ MonoBehaviour:
   delay_black_for_message: 2
   keep_message: 5
   keep_finale: 6
+  show_credits_second: 1
 --- !u!4 &1467161635
 Transform:
   m_ObjectHideFlags: 0
@@ -2763,8 +2826,8 @@ MonoBehaviour:
     narration: []
     script: 
   - name: 2
-    longText: 'Train, isn''t it difficult to drive with two steam engines pulling
-      in different directions?'
+    longText: Train, isn't it difficult to drive with two steam engines pulling in
+      different directions?
     img: {fileID: 2800000, guid: 0a70c16c7b47ab048bc9e03b588c24f6, type: 3}
     choices:
     - shortText: We aren't always pulling in different directions. We can help each
@@ -3011,9 +3074,9 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: 'The other engine and I, we have different views. But we can take
-        turns pulling and we can end up in unexpected and wonderful places. We''re
-        a team of explorers.'
+    - shortText: The other engine and I, we have different views. But we can take
+        turns pulling and we can end up in unexpected and wonderful places. We're
+        a team of explorers.
       next: 6
       editor: 0
       is_plot_point: 0
@@ -3356,7 +3419,7 @@ GameObject:
   - 212: {fileID: 1850882445}
   - 114: {fileID: 1850882444}
   m_Layer: 0
-  m_Name: ToysBackground_credits
+  m_Name: ToysBackground_credits2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
