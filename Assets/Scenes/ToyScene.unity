@@ -151,7 +151,7 @@ GameObject:
   - 114: {fileID: 338170176}
   - 114: {fileID: 338170175}
   m_Layer: 0
-  m_Name: Normal
+  m_Name: WolfToy
   m_TagString: Toys
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338170172}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8951c31b0bf9974fb344936d4e242c9, type: 3}
   m_Name: 
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338170172}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9e0bfcb76646304f9f8c828db1924ae, type: 3}
   m_Name: 
@@ -1170,17 +1170,18 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338170172}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e47d43ce2919414bb46cda8a5b8be24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
-  cursorSelectionTexture: {fileID: 0}
-  cursorMode: 0
-  cursorHotSpot: {x: 0, y: 0}
-  scaleIncrease: .5
-  scaleSpeed: 1
+  cursorTexture: {fileID: 2800000, guid: 42a2f64b19f8d3c4ca3b4b7e435efd58, type: 3}
+  cursorSelectionTexture: {fileID: 2800000, guid: 457a62504d57146468540e417c9f7565,
+    type: 3}
+  cursorMode: 1
+  cursorHotSpot: {x: 50, y: 0}
+  scaleIncrease: .0599999987
+  scaleSpeed: 6
 --- !u!61 &338170179
 BoxCollider2D:
   m_ObjectHideFlags: 0
