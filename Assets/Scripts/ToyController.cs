@@ -46,8 +46,8 @@ public class ToyController : MonoBehaviour
 
         // Inform the backgroundSwitch script on which toy is the focused one.
         GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().focused_toy = focusedToy;
-        bg_switch = GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>();
-        bg_switch.focused_toy = focusedToy;
+		bg_switch = GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>();
+		bg_switch.focused_toy = focusedToy;
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
 
@@ -82,7 +82,7 @@ public class ToyController : MonoBehaviour
         focusedToy.GetComponent<SpriteRenderer>().color = temp_color;
 
         //Inform the Backgroundswitch that we are entering dialogue "mode"
-        bg_switch.exit_dialogue = false;
+        //bg_switch.exit_dialogue = false;
         bg_switch.enter_dialogue = true;
     }
 
@@ -124,9 +124,9 @@ public class ToyController : MonoBehaviour
 
         //Notify the Background switch
 
-        bg_switch.score = score;
+       	bg_switch.score = score;
         bg_switch.aspect = aspect;
-        bg_switch.enter_dialogue = false;
+        //bg_switch.enter_dialogue = false;
         bg_switch.exit_dialogue = true;
     }
 }

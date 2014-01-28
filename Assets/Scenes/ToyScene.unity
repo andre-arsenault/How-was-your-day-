@@ -86,7 +86,7 @@ GameObject:
   - 114: {fileID: 129867059}
   m_Layer: 0
   m_Name: ToysBackground_message
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1251,7 +1251,7 @@ GameObject:
   - 114: {fileID: 406980520}
   m_Layer: 0
   m_Name: ToysBackground_credits
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1313,7 +1313,7 @@ GameObject:
   - 114: {fileID: 553415521}
   m_Layer: 0
   m_Name: ToysBackground
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2451,7 +2451,7 @@ GameObject:
   - 114: {fileID: 839660527}
   m_Layer: 0
   m_Name: ToysBackground_blur
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2513,7 +2513,7 @@ GameObject:
   - 114: {fileID: 959873434}
   m_Layer: 0
   m_Name: ToysBackground_end
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2571,8 +2571,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1467161635}
-  - 114: {fileID: 1467161634}
   - 82: {fileID: 1467161636}
+  - 114: {fileID: 1467161634}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -2588,22 +2588,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1467161633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b8f390c49722a14da3e655a534a788f, type: 3}
+  m_Script: {fileID: 11500000, guid: d02937d806dc8e740a795038a2bd2915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enter_dialogue: 0
   exit_dialogue: 0
+  speed: .800000012
+  finale: 0
   focused_toy: {fileID: 0}
   score: 0
   aspect: 
-  camera_original: 0
-  finale: 1
-  delay_end: 3
-  delay_black: 4
-  delay_black_for_message: 2
-  keep_message: 5
-  keep_finale: 6
-  show_credits_second: 1
 --- !u!4 &1467161635
 Transform:
   m_ObjectHideFlags: 0
@@ -3460,7 +3454,7 @@ GameObject:
   - 114: {fileID: 1826729826}
   m_Layer: 0
   m_Name: ToysBackground_black
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3522,7 +3516,7 @@ GameObject:
   - 114: {fileID: 1850882444}
   m_Layer: 0
   m_Name: ToysBackground_credits2
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3678,7 +3672,7 @@ GameObject:
   - 114: {fileID: 1994836507}
   m_Layer: 0
   m_Name: ToysBackground_finale
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
