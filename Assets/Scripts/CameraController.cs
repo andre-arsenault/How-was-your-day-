@@ -20,6 +20,9 @@ public class CameraController : MonoBehaviour
             stepOutCount++;
         }
 
+        if (stepOutCount > 0)
+            Debug.Log("Camera has been stepped-out " + stepOutCount + "x");
+
         originalSize = camera.orthographicSize;
         initializing = false;
     }

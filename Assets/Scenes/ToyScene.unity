@@ -2758,7 +2758,7 @@ MonoBehaviour:
   aspect: 
   score: 0
   clickAudio: {fileID: 0}
-  maxRotationAngle: .0299999993
+  maxRotationAngle: .0199999996
 --- !u!114 &1745734986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3015,10 +3015,10 @@ MonoBehaviour:
       is_plot_point: 0
       aspect: 
       good_ending: 0
-    - shortText: '$ The cargo isn''t to blame for the engines'' problems, but if
-        both engines pull in opposing directions no one will ever go anywhere. We
-        can go our separate ways and arrange for the cargo to be taken care of between
-        us. Depending on where the cargo needs to be.'
+    - shortText: $ The cargo isn't to blame for the engines' problems, but if both
+        engines pull in opposing directions no one will ever go anywhere. We can go
+        our separate ways and arrange for the cargo to be taken care of between us.
+        Depending on where the cargo needs to be.
       next: 10
       editor: 0
       is_plot_point: 1
