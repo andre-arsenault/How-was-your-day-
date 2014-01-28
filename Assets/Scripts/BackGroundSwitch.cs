@@ -162,7 +162,20 @@ public class BackGroundSwitch : MonoBehaviour
          *  we fade to normal and we reset the states.
          */
         if (end)
-        {
+        {	
+			if (back_ground_norm.color.a > 0.3)
+			{
+				//Reset everything
+				wait = true;
+				enter_dialogue = false;
+				exit_dialogue = false;
+				zoom_out = false;
+				bg_loaded = false;
+				
+
+				
+			}
+
             if (!finale)
             {
                 StartCoroutine("Start_Ending");
@@ -173,16 +186,11 @@ public class BackGroundSwitch : MonoBehaviour
                     {
                         //Reset everything
                         end = false;
-                        wait = true;
-                        enter_dialogue = false;
-                        exit_dialogue = false;
-                        zoom_out = false;
-                        bg_loaded = false;
-
-                        temp_color.a = 0;
-                        back_ground_blur.color = temp_color;
-                        back_ground_end.color = temp_color;
-                        back_ground_black.color = temp_color;
+						temp_color.a = 0;
+						back_ground_blur.color = temp_color;
+						back_ground_end.color = temp_color;
+						back_ground_black.color = temp_color;;
+                       
                     }
                 }
             }
