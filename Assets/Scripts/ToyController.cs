@@ -6,13 +6,39 @@ public class ToyController : MonoBehaviour
 {
     #region Fields, Properties and Constructor
 
-    bool rotate = false;
+    #region Toy Rotation Variables
+
+    public enum RotationStates
+    {
+        None = 0,
+        Forward = 1,
+        Backward = 2,
+        Rewinding = 4,
+        Stopping = 8
+    }
+
+    RotationStates rotationState = RotationStates.None;
+    float rotationAngle;
+
+    [SerializeField]
+    float maxRotationAngle = 0.03f;
+
+    public float MaxRotationAngle
+    {
+        get { return maxRotationAngle; }
+        set
+        {
+            if (value >= 0.001f && value <= 0.1f)
+                maxRotationAngle = value;
+        }
+    }
+
+    #endregion Toy Rotation Variables
+
     BackgroundController backgroundController;
     BackGroundSwitch bg_switch;
     DialogueInstance dialogue;
-    float rotationAngle;
     GameObject focusedToy;
-    System.Random rotationRandomizer;
     Sprite[] backgrounds;
 
     public Sprite temp;
@@ -20,19 +46,11 @@ public class ToyController : MonoBehaviour
     public int score;
 
     public AudioClip clickAudio;
-    public float maxRotationAngle = 0.03f;
 
     public Sprite[] Backgrounds
     {
         get { return backgrounds; }
         set { backgrounds = value; }
-    }
-
-
-
-    public ToyController()
-    {
-        rotationRandomizer = new System.Random();
     }
 
     #endregion Fields, Properties and Constructor
@@ -46,8 +64,8 @@ public class ToyController : MonoBehaviour
 
         // Inform the backgroundSwitch script on which toy is the focused one.
         GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>().focused_toy = focusedToy;
-		bg_switch = GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>();
-		bg_switch.focused_toy = focusedToy;
+        bg_switch = GameObject.Find("GameLogic").GetComponent<BackGroundSwitch>();
+        bg_switch.focused_toy = focusedToy;
         dialogue = gameObject.GetComponent<DialogueInstance>();
     }
 
@@ -88,17 +106,36 @@ public class ToyController : MonoBehaviour
 
     void Update()
     {
-        if (rotate)
+        if (rotationState == RotationStates.Forward || rotationState == RotationStates.Rewinding)
         {
-            focusedToy.transform.Rotate(new Vector3(0f, 0f, rotationAngle) * (Time.deltaTime * 600f));
+            focusedToy.transform.Rotate(Vector3.back, Time.deltaTime * 30f);
+            //Debug.Log(">> " + focusedToy.transform.rotation.z + " < " + -rotationAngle + " : " + (focusedToy.transform.rotation.z < rotationAngle));
 
-            if (focusedToy.transform.rotation.z < rotationAngle)
-                rotate = false;
+            if (rotationState == RotationStates.Forward)
+            {
+                if (focusedToy.transform.rotation.z < -rotationAngle)
+                    rotationState = RotationStates.Backward;
+            }
+            else if (rotationState == RotationStates.Rewinding)
+            {
+                if (focusedToy.transform.rotation.z < 0f)
+                    rotationState = RotationStates.Stopping;
+            }
         }
-        else if (focusedToy.transform.rotation.z < 0f)
-            focusedToy.transform.Rotate(new Vector3(0f, 0f, -rotationAngle) * (Time.deltaTime * 600f));
-        else if (focusedToy.transform.rotation.z > 0f)
+        else if (rotationState == RotationStates.Backward)
+        {
+            focusedToy.transform.Rotate(Vector3.forward, Time.deltaTime * 30f);
+            //Debug.Log("<< " + focusedToy.transform.rotation.z + " > " + (rotationAngle * 2) + " : " + (focusedToy.transform.rotation.z > (rotationAngle * 2)));
+
+            if (focusedToy.transform.rotation.z > (rotationAngle * 2))
+                rotationState = RotationStates.Rewinding;
+        }
+        else if (rotationState == RotationStates.Stopping)
+        {
+            rotationState = RotationStates.None;
+
             focusedToy.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+        }
     }
 
 
@@ -108,8 +145,8 @@ public class ToyController : MonoBehaviour
         if (clickAudio != null)
             focusedToy.GetComponent<AudioSource>().PlayOneShot(clickAudio);
 
-        rotationAngle = Mathf.Max(-((float)rotationRandomizer.NextDouble() / 10f), -maxRotationAngle);
-        rotate = true;
+        rotationAngle = Mathf.Max(Mathf.Min(UnityEngine.Random.value / 20f, maxRotationAngle), 0.01f);
+        rotationState = RotationStates.Forward;
     }
 
     public void OnDialogueEnd(string aspect)
@@ -124,7 +161,7 @@ public class ToyController : MonoBehaviour
 
         //Notify the Background switch
 
-       	bg_switch.score = score;
+        bg_switch.score = score;
         bg_switch.aspect = aspect;
         //bg_switch.enter_dialogue = false;
         bg_switch.exit_dialogue = true;
