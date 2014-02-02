@@ -152,11 +152,15 @@ public class ToyController : MonoBehaviour
     public void OnDialogueEnd(string aspect)
     {
         this.aspect = aspect;
-        // Set no focused toy
+
+        // Remove the focused toy
         focusedToy.GetComponent<SpriteRenderer>().sprite = null;
 
-        // 0 Neg 1 Pos
-        score = Convert.ToInt32(Convert.ToBoolean(Score.good_endings[aspect]));
+        bool aspectEndingPositive = Convert.ToBoolean(Score.good_endings[aspect]);
+        KongregateController.ReportDialogueCompleted(aspect.ToLower(), aspectEndingPositive);
+        // Convert Boolean to Integer (0 = Negative Ending / 1 = Positive Ending)
+        score = Convert.ToInt32(aspectEndingPositive);
+
         //focusedToy.GetComponent<SpriteRenderer>().sprite = temp;
 
         //Notify the Background switch
