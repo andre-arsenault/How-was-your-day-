@@ -156,8 +156,14 @@ public class BackGroundSwitch : MonoBehaviour {
 				yield return new WaitForSeconds(3);
 
 				StartCoroutine(FadeOut(backgrounds["ToysBackground_credits2"]));
-				yield return StartCoroutine(FadeIn(backgrounds["ToysBackground_black"]));
+				yield return StartCoroutine(FadeIn(backgrounds["ToysBackground_credits_gj"]));
 				SetTransparency(backgrounds["ToysBackground_credits2"], 0);
+				SetTransparency(backgrounds["ToysBackground_credits_gj"], 1);
+				yield return new WaitForSeconds(2);
+
+				StartCoroutine(FadeOut(backgrounds["ToysBackground_credits_gj"]));
+				yield return StartCoroutine(FadeIn(backgrounds["ToysBackground_black"]));
+				SetTransparency(backgrounds["ToysBackground_credits_gj"], 0);
 				SetTransparency(backgrounds["ToysBackground_black"], 1);
 				yield return new WaitForSeconds(2);
 

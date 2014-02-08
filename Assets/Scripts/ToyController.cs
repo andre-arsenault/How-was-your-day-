@@ -157,7 +157,8 @@ public class ToyController : MonoBehaviour
         focusedToy.GetComponent<SpriteRenderer>().sprite = null;
 
         bool aspectEndingPositive = Convert.ToBoolean(Score.good_endings[aspect]);
-        KongregateController.ReportDialogueCompleted(aspect.ToLower(), aspectEndingPositive);
+		Debug.Log("Click on this message on the console to get , where the Kongragate Line is on the ToyController.cs");
+        //KongregateController.ReportDialogueCompleted(aspect.ToLower(), aspectEndingPositive);
         // Convert Boolean to Integer (0 = Negative Ending / 1 = Positive Ending)
         score = Convert.ToInt32(aspectEndingPositive);
 
